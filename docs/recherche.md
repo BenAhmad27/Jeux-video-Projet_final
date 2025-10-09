@@ -15,7 +15,10 @@ Permettre aux ennemis de se diriger vers le personnage pour le toucher et ainsi 
 
 **Source :**  
 [Nature of code](https://github.com/nbourre/0sw_notes_cours/tree/main/c05_godot_agregation)
+
 [site du professeur]( https://natureofcode.com/autonomous-agents/)
+
+
   
 ## Élément clé 2 : Utilisation des forces pour rendre le jeu plus attirant
 
@@ -33,6 +36,15 @@ Permettre au joueur de ramasser des objets (médicaments, vaccin) sur la carte e
 
 **Source :**  
 [Site du professeur](https://github.com/nbourre/0sw_notes_cours/tree/main/c07c_plateformes_loots)
+
+
+## Élément clé 3 : Gestion des limites du camera
+
+**Objectif :**  
+Limiter l'écran dans certaines zones pour permettre au personnage de changer d'environnement 
+
+**Source :**  
+[Youtube Micheal Games](https://www.youtube.com/watch?v=KQ9XreEyn6U&list=PLfcCiyd_V9GH8M9xd_QKlyU8jryGcy3Xa&index=8)
 
 ---
 
