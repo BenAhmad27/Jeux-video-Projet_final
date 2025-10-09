@@ -14,8 +14,8 @@ Je veux créer un jeu d’aventure 2D, où le joueur explore un environnement, �
 Permettre aux ennemis de se diriger vers le personnage pour le toucher et ainsi lui trasmettre le sort.
 
 **Source :**  
-[Nature of code/site du professeur](https://github.com/nbourre/0sw_notes_cours/tree/main/c05_godot_agregation  &&https://natureofcode.com/autonomous-agents/)
-
+[Nature of code](https://github.com/nbourre/0sw_notes_cours/tree/main/c05_godot_agregation)
+[site du professeur]( https://natureofcode.com/autonomous-agents/)
   
 ## Élément clé 2 : Utilisation des forces pour rendre le jeu plus attirant
 
