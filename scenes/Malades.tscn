@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cuat5ra5wadxo"]
+
+[node name="malades" type="CharacterBody2D"]
