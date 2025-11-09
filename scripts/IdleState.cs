@@ -29,8 +29,6 @@ public partial class IdleState : PlayerState
 
 		_player.Velocity = _player.Motion;
 		
-		_player.MoveAndSlide(); 
-		
 		// If you have platforms that break when standing on them, you need that check for the character to fall.
 		if (!_player.IsOnFloor())
 		{
@@ -45,6 +43,10 @@ public partial class IdleState : PlayerState
 		else if (Input.IsActionPressed("ui_left") || Input.IsActionPressed("ui_right"))
 		{
 			_stateMachine.TransitionTo("Run");
+		}
+		else if (Input.IsActionJustPressed("attack"))
+		{
+			_stateMachine.TransitionTo("Attack");
 		}
 	}
 }
