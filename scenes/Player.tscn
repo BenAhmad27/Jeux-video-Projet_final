@@ -1,13 +1,13 @@
 [gd_scene load_steps=19 format=3 uid="uid://dlr76ouxshr5g"]
 
-[ext_resource type="Script" uid="uid://b1psdaj0pweln" path="res://Scripts/JumpState.cs" id="1"]
-[ext_resource type="Script" uid="uid://dlm2yhol2w4c1" path="res://Scripts/FallState.cs" id="2"]
+[ext_resource type="Script" uid="uid://cc81arosgkpk2" path="res://Scripts/player.gd" id="1_bhhdu"]
 [ext_resource type="Texture2D" uid="uid://clc6wsaeqpjqk" path="res://assets/img/Xcharacter.png" id="2_52ee3"]
-[ext_resource type="Script" uid="uid://dubqergndyl17" path="res://Scripts/Player.cs" id="3"]
-[ext_resource type="Script" uid="uid://c0mwph6tpxxgu" path="res://Scripts/StateMachine.cs" id="5"]
-[ext_resource type="Script" uid="uid://dv145w7qvimt3" path="res://Scripts/RunState.cs" id="6"]
-[ext_resource type="Script" uid="uid://bxiibh3dj7pnm" path="res://Scripts/IdleState.cs" id="7"]
-[ext_resource type="Script" uid="uid://cmelwue7oxy6b" path="res://Scripts/AttackState.cs" id="8_bhhdu"]
+[ext_resource type="Script" uid="uid://dgdicdh7jttys" path="res://Scripts/state_machine.gd" id="3_megsn"]
+[ext_resource type="Script" uid="uid://bdr46y0atbtt8" path="res://Scripts/idle_state.gd" id="4_yoq75"]
+[ext_resource type="Script" uid="uid://bbkkxfn200tnv" path="res://Scripts/run_state.gd" id="5_ksbbd"]
+[ext_resource type="Script" uid="uid://dq0uer3jyyoq1" path="res://Scripts/fall_state.gd" id="6_glx4g"]
+[ext_resource type="Script" uid="uid://b5kiirnf8pt4n" path="res://Scripts/jump_state.gd" id="7_miouo"]
+[ext_resource type="Script" uid="uid://chjr3ffioi45r" path="res://Scripts/attack_state.gd" id="8_o3h8g"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 15.0
@@ -154,7 +154,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("3")
+script = ExtResource("1_bhhdu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 8)
@@ -178,20 +178,20 @@ libraries = {
 }
 
 [node name="StateMachine" type="Node" parent="."]
-script = ExtResource("5")
-InitialState = NodePath("Idle")
+script = ExtResource("3_megsn")
+initial_state = NodePath("Idle")
 
 [node name="Idle" type="Node" parent="StateMachine"]
-script = ExtResource("7")
+script = ExtResource("4_yoq75")
 
 [node name="Run" type="Node" parent="StateMachine"]
-script = ExtResource("6")
+script = ExtResource("5_ksbbd")
 
 [node name="Fall" type="Node" parent="StateMachine"]
-script = ExtResource("2")
+script = ExtResource("6_glx4g")
 
 [node name="Jump" type="Node" parent="StateMachine"]
-script = ExtResource("1")
+script = ExtResource("7_miouo")
 
 [node name="Attack" type="Node" parent="StateMachine"]
-script = ExtResource("8_bhhdu")
+script = ExtResource("8_o3h8g")

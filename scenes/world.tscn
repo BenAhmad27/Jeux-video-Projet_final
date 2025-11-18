@@ -1,10 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2m57c5j2esxh"]
+[gd_scene load_steps=3 format=3 uid="uid://d2m57c5j2esxh"]
 
 [ext_resource type="PackedScene" uid="uid://dlr76ouxshr5g" path="res://Scenes/Player.tscn" id="2_5a7ea"]
 [ext_resource type="PackedScene" uid="uid://4rpobhcyro7j" path="res://Scenes/tiles.tscn" id="2_go701"]
-[ext_resource type="PackedScene" uid="uid://c8jqelu41gh48" path="res://Scenes/kill_zone.tscn" id="3_5a7ea"]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8j60k"]
 
 [node name="world" type="Node2D"]
 
@@ -21,10 +18,3 @@ text = "Conversion d'un projet 4.3 mono vers 4.5"
 
 [node name="Node2D" parent="." instance=ExtResource("2_go701")]
 position = Vector2(-29, -342)
-
-[node name="KillZone" parent="." instance=ExtResource("3_5a7ea")]
-position = Vector2(-19, 300)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="KillZone"]
-position = Vector2(-4, 0)
-shape = SubResource("WorldBoundaryShape2D_8j60k")
