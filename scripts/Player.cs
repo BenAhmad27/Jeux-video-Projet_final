@@ -6,7 +6,7 @@ public partial class Player : CharacterBody2D
 	public int GRAVITY = 400;
 	public int MAXFALLSPEED = 200;
 	public int MAXSPEED = 100;
-	public int JUMPFORCE = 200;
+	public int JUMPFORCE = 300;
 
 	public int ACCEL = 10;
 	Vector2 vZero = new Vector2();

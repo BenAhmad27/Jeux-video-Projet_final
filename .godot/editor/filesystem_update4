@@ -1,9 +1,8 @@
 res://default_env.tres
-res://Scenes/world.tscn
-res://tiles.tres
-res://Scripts/Player.cs
-res://Scenes/Player.tscn
 res://Scenes/tiles.tscn
+res://Scripts/Player.cs
+res://Scenes/world.tscn
+res://Scenes/Player.tscn
 res://Scripts/RunState.cs
 res://Scripts/PlayerState.cs
 res://Scripts/IdleState.cs
@@ -11,3 +10,7 @@ res://Scripts/FallState.cs
 res://Scripts/JumpState.cs
 res://Scripts/AttackState.cs
 res://Scripts/StateMachine.cs
+res://Scenes/kill_zone.tscn
+res://kill_zone.tscn
+res://KillZone.cs
+res://Scripts/KillZone.cs
