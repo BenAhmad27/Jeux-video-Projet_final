@@ -1,12 +1,10 @@
 res://default_env.tres
 res://Scenes/world.tscn
+res://Scenes/2nd_tiles.tscn
+res://Scenes/world_2.tscn
+res://Scripts/scene_trigger.gd
+res://Scenes/kill_zone.tscn
+res://Scenes/scene_trigger.tscn
 res://Scenes/Player.tscn
 res://Scenes/tiles.tscn
 res://Scenes/Ennemis.tscn
-res://Scripts/run_state.gd
-res://Scenes/2nd_tiles.tscn
-res://Scripts/scene_trigger.gd
-res://Scenes/scene_trigger.tscn
-res://Scenes/world_2.tscn
-res://Scenes/kill_zone.gd
-res://Scenes/kill_zone.tscn

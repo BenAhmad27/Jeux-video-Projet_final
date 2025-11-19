@@ -1,12 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7dh27w3jr2rx"]
+[gd_scene load_steps=5 format=3 uid="uid://b7dh27w3jr2rx"]
 
 [ext_resource type="PackedScene" uid="uid://ccku8bggcs2xb" path="res://Scenes/2nd_tiles.tscn" id="1_ar73u"]
 [ext_resource type="PackedScene" uid="uid://dlr76ouxshr5g" path="res://Scenes/Player.tscn" id="2_wdtk5"]
+[ext_resource type="PackedScene" uid="uid://bh85lunuyk52p" path="res://Scenes/scene_trigger.tscn" id="3_wdtk5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdtk5"]
+size = Vector2(27, 67)
 
 [node name="world2" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource("1_ar73u")]
-position = Vector2(4, -218)
+position = Vector2(0, -213)
 
 [node name="Player" parent="." instance=ExtResource("2_wdtk5")]
-position = Vector2(31, 216)
+position = Vector2(73, 220)
+
+[node name="Scene_trigger2" parent="." instance=ExtResource("3_wdtk5")]
+position = Vector2(12, 246)
+connected_scene = "world"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_trigger2"]
+position = Vector2(1.5, -13.5)
+shape = SubResource("RectangleShape2D_wdtk5")

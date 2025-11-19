@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://drknyey3pkq4e" path="res://Scenes/kill_zone.tscn" id="4_8j60k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j60k"]
-size = Vector2(31, 108.5)
+size = Vector2(31, 112.25)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8j60k"]
 
@@ -27,10 +27,11 @@ text = "Conversion d'un projet 4.3 mono vers 4.5"
 position = Vector2(-1035, -345)
 
 [node name="Scene_trigger" parent="." instance=ExtResource("3_5a7ea")]
-position = Vector2(104, -9)
+position = Vector2(1496, -5)
+connected_scene = "world_2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_trigger"]
-position = Vector2(-6, -10)
+position = Vector2(-3, -30.875)
 shape = SubResource("RectangleShape2D_8j60k")
 
 [node name="kill_zone" parent="." instance=ExtResource("4_8j60k")]
