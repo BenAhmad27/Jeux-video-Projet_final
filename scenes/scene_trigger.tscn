@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh85lunuyk52p"]
+
+[ext_resource type="Script" uid="uid://5ds4mgn80elt" path="res://Scripts/scene_trigger.gd" id="1_mgjgu"]
+
+[node name="Scene_trigger" type="Area2D"]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("1_mgjgu")
+connected_scene = "world_2"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
