@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1763520766
-default_env.tres::Environment::6769883681080497654::1763520648::0::1::::<><><>0<>0<><>::
+::res://::1763554609
+default_env.tres::Environment::6769883681080497654::1763522002::0::1::::<><><>0<>0<><>::
 tiles.tres::TileSet/TileSet::9063788566499977305::1762913354::0::1::::<><><>0<>0<><>::uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
 ::res://assets/::1762651614
 ::res://assets/img/::1763438130
@@ -15,17 +15,17 @@ Zombie.png::CompressedTexture2D/CompressedTexture2D::3555268739064995082::176343
 ::res://docs/::1761665706
 histoire.md::TextFile/TextFile::-1::1761666515::0::1::::<><><>0<>0<><>::
 recherche.md::TextFile/TextFile::-1::1760027601::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1763520648
-2nd_tiles.tscn::PackedScene::4935136165325256811::1763520522::0::1::::<><><>0<>0<><>::uid://byejyakfbqqmf::::res://assets/img/Gray.png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png
-Ennemis.tscn::PackedScene::5253538290946078809::1763520522::0::1::::<><><>0<>0<><>::uid://bqwg0y0m8abm5::::res://assets/img/Zombie.png
-kill_zone.gd::GDScript::6402522940597707348::1763520485::0::1::::<>Area2D<><>0<>0<><>::
-kill_zone.tscn::PackedScene::8373948598887488990::1763520648::0::1::::<><><>0<>0<><>::uid://cxhou8yy83cvs::::res://Scenes/kill_zone.gd
-Player.tscn::PackedScene::7968432823588609150::1763520519::0::1::::<><><>0<>0<><>::uid://cc81arosgkpk2::::res://Scripts/player.gd<>uid://clc6wsaeqpjqk::::res://assets/img/Xcharacter.png<>uid://dgdicdh7jttys::::res://Scripts/state_machine.gd<>uid://bdr46y0atbtt8::::res://Scripts/idle_state.gd<>uid://bbkkxfn200tnv::::res://Scripts/run_state.gd<>uid://dq0uer3jyyoq1::::res://Scripts/fall_state.gd<>uid://b5kiirnf8pt4n::::res://Scripts/jump_state.gd<>uid://chjr3ffioi45r::::res://Scripts/attack_state.gd
-scene_trigger.tscn::PackedScene::2947709280049917613::1763520522::0::1::::<><><>0<>0<><>::uid://5ds4mgn80elt::::res://Scripts/scene_trigger.gd
-tiles.tscn::PackedScene::2071506706788730249::1763520520::0::1::::<><><>0<>0<><>::uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
-world.tscn::PackedScene::9081012169378856909::1763520519::0::1::::<><><>0<>0<><>::uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://4rpobhcyro7j::::res://Scenes/tiles.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn
-world_2.tscn::PackedScene::4639131764774934749::1763520522::0::1::::<><><>0<>0<><>::uid://ccku8bggcs2xb::::res://Scenes/2nd_tiles.tscn<>uid://dlr76ouxshr5g::::res://Scenes/Player.tscn
-::res://Scripts/::1763519014
+::res://Scenes/::1763522002
+2nd_tiles.tscn::PackedScene::4935136165325256811::1763521890::0::1::::<><><>0<>0<><>::uid://byejyakfbqqmf::::res://assets/img/Gray.png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png
+Ennemis.tscn::PackedScene::5253538290946078809::1763521890::0::1::::<><><>0<>0<><>::uid://bqwg0y0m8abm5::::res://assets/img/Zombie.png
+kill_zone.gd::GDScript/GDScript::6402522940597707348::1763520485::0::1::::<>Area2D<><>0<>0<><>::
+kill_zone.tscn::PackedScene::8373948598887488990::1763522002::0::1::::<><><>0<>0<><>::uid://cxhou8yy83cvs::::res://Scenes/kill_zone.gd
+Player.tscn::PackedScene::7968432823588609150::1763521885::0::1::::<><><>0<>0<><>::uid://cc81arosgkpk2::::res://Scripts/player.gd<>uid://clc6wsaeqpjqk::::res://assets/img/Xcharacter.png<>uid://dgdicdh7jttys::::res://Scripts/state_machine.gd<>uid://bdr46y0atbtt8::::res://Scripts/idle_state.gd<>uid://bbkkxfn200tnv::::res://Scripts/run_state.gd<>uid://dq0uer3jyyoq1::::res://Scripts/fall_state.gd<>uid://b5kiirnf8pt4n::::res://Scripts/jump_state.gd<>uid://chjr3ffioi45r::::res://Scripts/attack_state.gd
+scene_trigger.tscn::PackedScene::2947709280049917613::1763521890::0::1::::<><><>0<>0<><>::uid://5ds4mgn80elt::::res://Scripts/scene_trigger.gd
+tiles.tscn::PackedScene::2071506706788730249::1763521887::0::1::::<><><>0<>0<><>::uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
+world.tscn::PackedScene::9081012169378856909::1763521885::0::1::::<><><>0<>0<><>::uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://4rpobhcyro7j::::res://Scenes/tiles.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn
+world_2.tscn::PackedScene::4639131764774934749::1763521891::0::1::::<><><>0<>0<><>::uid://ccku8bggcs2xb::::res://Scenes/2nd_tiles.tscn<>uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn
+::res://Scripts/::1763522002
 attack_state.gd::GDScript/GDScript::5283825134468647649::1763496200::0::1::::<>PlayerState<><>0<>0<><>::
 base_state.gd::GDScript/GDScript::4408820515219093850::1763501189::0::1::::State<>Node<><>0<>0<><>::
 fall_state.gd::GDScript/GDScript::8335115412763691602::1763497036::0::1::::<>PlayerState<><>0<>0<><>::
@@ -33,6 +33,6 @@ idle_state.gd::GDScript/GDScript::2633899088033459819::1763497162::0::1::::<>Pla
 jump_state.gd::GDScript/GDScript::4513230705919339803::1763497313::0::1::::<>PlayerState<><>0<>0<><>::
 player.gd::GDScript/GDScript::4982923077708648219::1763499700::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 player_state.gd::GDScript/GDScript::2726113753242752090::1763500809::0::1::::PlayerState<>State<><>0<>0<><>::
-run_state.gd::GDScript::2477901832019586451::1763502513::0::1::::<>PlayerState<><>0<>0<><>::
-scene_trigger.gd::GDScript::2113003776480964625::1763519014::0::1::::SceneTrigger<>Area2D<><>0<>0<><>::
+run_state.gd::GDScript/GDScript::2477901832019586451::1763502513::0::1::::<>PlayerState<><>0<>0<><>::
+scene_trigger.gd::GDScript::2113003776480964625::1763522002::0::1::::SceneTrigger<>Area2D<><>0<>0<><>::
 state_machine.gd::GDScript/GDScript::7587077723550029814::1763500110::0::1::::StateMachine<>Node<><>0<>0<><>::
