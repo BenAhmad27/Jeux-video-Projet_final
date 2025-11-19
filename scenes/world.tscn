@@ -7,7 +7,7 @@
 
 [node name="Player" parent="." instance=ExtResource("2_5a7ea")]
 z_index = 1
-position = Vector2(57, 122)
+position = Vector2(-905, 113)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 438.0
@@ -17,4 +17,4 @@ offset_bottom = 20.0
 text = "Conversion d'un projet 4.3 mono vers 4.5"
 
 [node name="Node2D" parent="." instance=ExtResource("2_go701")]
-position = Vector2(-29, -342)
+position = Vector2(-1035, -345)
