@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7dh27w3jr2rx"]
+[gd_scene load_steps=7 format=3 uid="uid://b7dh27w3jr2rx"]
 
 [ext_resource type="PackedScene" uid="uid://ccku8bggcs2xb" path="res://Scenes/2nd_tiles.tscn" id="1_ar73u"]
 [ext_resource type="PackedScene" uid="uid://dlr76ouxshr5g" path="res://Scenes/Player.tscn" id="2_wdtk5"]
 [ext_resource type="PackedScene" uid="uid://bh85lunuyk52p" path="res://Scenes/scene_trigger.tscn" id="3_wdtk5"]
+[ext_resource type="PackedScene" uid="uid://drknyey3pkq4e" path="res://Scenes/kill_zone.tscn" id="4_bvv5j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wdtk5"]
 size = Vector2(27, 67)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w60u7"]
 
 [node name="world2" type="Node2D"]
 
@@ -22,3 +25,9 @@ connected_scene = "world"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_trigger2"]
 position = Vector2(1.5, -13.5)
 shape = SubResource("RectangleShape2D_wdtk5")
+
+[node name="kill_zone" parent="." instance=ExtResource("4_bvv5j")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone"]
+position = Vector2(499, 314)
+shape = SubResource("WorldBoundaryShape2D_w60u7")
