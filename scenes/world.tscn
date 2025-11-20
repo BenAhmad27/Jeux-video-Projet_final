@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2m57c5j2esxh"]
+[gd_scene load_steps=8 format=3 uid="uid://d2m57c5j2esxh"]
 
 [ext_resource type="PackedScene" uid="uid://dlr76ouxshr5g" path="res://Scenes/Player.tscn" id="2_5a7ea"]
 [ext_resource type="PackedScene" uid="uid://4rpobhcyro7j" path="res://Scenes/tiles.tscn" id="2_go701"]
 [ext_resource type="PackedScene" uid="uid://bh85lunuyk52p" path="res://Scenes/scene_trigger.tscn" id="3_5a7ea"]
 [ext_resource type="PackedScene" uid="uid://drknyey3pkq4e" path="res://Scenes/kill_zone.tscn" id="4_8j60k"]
+[ext_resource type="PackedScene" uid="uid://cg34ajmm1age0" path="res://Scenes/Ennemis.tscn" id="5_fo5ed"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j60k"]
 size = Vector2(31, 112.25)
@@ -39,3 +40,15 @@ position = Vector2(-82, 346)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone"]
 shape = SubResource("WorldBoundaryShape2D_8j60k")
+
+[node name="Ennemis" parent="." instance=ExtResource("5_fo5ed")]
+position = Vector2(-603, 187)
+
+[node name="Ennemis2" parent="." instance=ExtResource("5_fo5ed")]
+position = Vector2(102, 88)
+
+[node name="Ennemis3" parent="." instance=ExtResource("5_fo5ed")]
+position = Vector2(1039, 106)
+
+[node name="Ennemis4" parent="." instance=ExtResource("5_fo5ed")]
+position = Vector2(607, 183)

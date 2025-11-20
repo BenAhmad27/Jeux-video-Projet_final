@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cg34ajmm1age0"]
+[gd_scene load_steps=9 format=3 uid="uid://cg34ajmm1age0"]
 
 [ext_resource type="Texture2D" uid="uid://bqwg0y0m8abm5" path="res://assets/img/Zombie.png" id="1_ur6qk"]
 
@@ -92,10 +92,13 @@ _data = {
 &"Walk": SubResource("Animation_ctyin")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ur6qk"]
+size = Vector2(18, 62)
+
 [node name="Ennemis" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(4, 2)
+position = Vector2(2, 1)
 texture = ExtResource("1_ur6qk")
 hframes = 6
 vframes = 4
@@ -105,3 +108,7 @@ frame = 12
 libraries = {
 &"": SubResource("AnimationLibrary_ctyin")
 }
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 33)
+shape = SubResource("RectangleShape2D_ur6qk")
