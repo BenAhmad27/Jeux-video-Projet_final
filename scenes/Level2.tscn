@@ -20,7 +20,6 @@ position = Vector2(73, 220)
 
 [node name="Scene_trigger2" parent="." instance=ExtResource("3_wdtk5")]
 position = Vector2(12, 246)
-connected_scene = ""
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_trigger2"]
 position = Vector2(1.5, -13.5)

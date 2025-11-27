@@ -1,13 +1,11 @@
 res://default_env.tres
+res://Scenes/Ennemis.tscn
+res://Scripts/ennemis.gd
 res://Scenes/world.tscn
 res://Scenes/Player.tscn
 res://Scenes/tiles.tscn
 res://Scenes/2nd_tiles.tscn
-res://Scenes/Ennemis.tscn
 res://Scenes/scene_trigger.tscn
-res://Scenes/world_2.tscn
-res://Scenes/kill_zone.tscn
 res://Scenes/Level2.tscn
+res://Scenes/kill_zone.tscn
 res://Scenes/level_1.tscn
-res://Scripts/scene_trigger.gd
-res://Scripts/kill_zone.gd
