@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Ennemy
 
 var is_moving_left = false
 var gravity = 10
@@ -11,6 +12,7 @@ var health = max_health
 
 func _ready():
 	$AnimationPlayer.play("Walk")
+	$HealthBar.value = health 
 
 func _process(_delta):
 	if $AnimationPlayer.current_animation == "Attack":
@@ -44,20 +46,10 @@ func _on_player_detector_body_entered(body: Node2D) -> void:
 	$AnimationPlayer.play("Attack")
 
 
-func _on_attack_detector_body_entered(body: Node2D) -> void:
-	if body is Player:
-		var anim = body.get_node("AnimationPlayer")
-		
-		if anim.current_animation == "Attack":
-			# Le joueur tue l'ennemi (BON)
-			take_damage(1)
-			print("DIED ENNEMY")
-		#else:
-			## Le joueur se fait toucher (MAUVAIS)
-			#get_tree().call_deferred("reload_current_scene")
-			
-	
-	#get_tree().reload_current_scene()
+#func _on_attack_detector_body_entered(body: Node2D) -> void:
+		#get_tree().call_deferred("reload_current_scene")
+			#
+
 	
 	
 func take_damage(amount: int):

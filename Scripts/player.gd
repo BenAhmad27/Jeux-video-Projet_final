@@ -19,8 +19,16 @@ var anim_player: AnimationPlayer
 var state_machine: Node
 
 var health := 100
-var attack_power := 20
+var attack_power := 1
 var attack_detector 
+
+var player_in_attack_zone = false
+var player_ref = null
+
+var enemy_ref = null
+
+var attack_cooldown = 0.5
+var attack_timer = 0.0
 
 # ===============================================================
 
@@ -36,3 +44,36 @@ func _physics_process(delta: float) -> void:
 	current_sprite.flip_h = not facing_right
 	
 	
+func _process(delta):
+	if player_in_attack_zone:
+		attack_timer -= delta
+		# Vérifie si le joueur est en train d'attaquer
+	if anim_player.current_animation == "Attack" and attack_timer <= 0:
+		if enemy_ref and enemy_ref.has_method("take_damage"):
+			enemy_ref.take_damage(1)  # Le joueur inflige 1 point de dégâts
+			print("ENNEMY HIT")
+			attack_timer = attack_cooldown
+
+# Quand un ennemi entre dans la zone de l'attackDetector
+#func _on_AttackDetector_body_entered(body: Node2D) -> void:
+	#if body is Ennemy:  # ou un test body.name == "Enemy"
+		#player_in_attack_zone = true
+		#enemy_ref = body
+#
+## Quand un ennemi sort de la zone de l'attackDetector
+#func _on_AttackDetector_body_exited(body: Node2D) -> void:
+	#if body == enemy_ref:
+		#player_in_attack_zone = false
+		#enemy_ref = null
+
+
+func _on_attack_detector_body_entered(body: Node2D) -> void:
+	if body is Ennemy:  # ou un test body.name == "Enemy"
+		player_in_attack_zone = true
+		enemy_ref = body
+
+
+func _on_attack_detector_body_exited(body: Node2D) -> void:
+	if body == enemy_ref:
+		player_in_attack_zone = false
+		enemy_ref = null

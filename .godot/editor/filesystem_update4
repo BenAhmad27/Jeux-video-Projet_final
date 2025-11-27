@@ -10,3 +10,4 @@ res://Scenes/Level2.tscn
 res://Scenes/kill_zone.tscn
 res://Scenes/level_1.tscn
 res://Scripts/player.gd
+res://Scripts/attack_state.gd
