@@ -71,8 +71,16 @@ func end_of_hit():
 func start_walk():
 	$AnimationPlayer.play("Walk")
 
-func _on_PlayerDetector_body_entered(body):
+#func _on_PlayerDetector_body_entered(body):
+	#$AnimationPlayer.play("Attack")
+#
+#func _on_AttackDetector_body_entered(body):
+	#get_tree().reload_current_scene()
+
+
+func _on_player_detector_body_entered(body: Node2D) -> void:
 	$AnimationPlayer.play("Attack")
 
-func _on_AttackDetector_body_entered(body):
+
+func _on_attack_detector_body_entered(body: Node2D) -> void:
 	get_tree().reload_current_scene()

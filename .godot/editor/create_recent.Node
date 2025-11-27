@@ -1,8 +1,8 @@
+CollisionShape2D
+Area2D
 RayCast2D
 Node2D
-CollisionShape2D
 Timer
-Area2D
 TileMap
 TextureRect
 AnimationPlayer
