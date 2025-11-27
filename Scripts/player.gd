@@ -18,14 +18,21 @@ var current_sprite: Sprite2D
 var anim_player: AnimationPlayer
 var state_machine: Node
 
+var health := 100
+var attack_power := 20
+var attack_detector 
+
 # ===============================================================
 
 func _ready() -> void:
 	current_sprite = $Sprite2D
 	anim_player = $AnimationPlayer
 	state_machine = $StateMachine
+	attack_detector = $AttackDetector
 
 
 func _physics_process(delta: float) -> void:
 	# Flip horizontal du sprite selon la direction
 	current_sprite.flip_h = not facing_right
+	
+	

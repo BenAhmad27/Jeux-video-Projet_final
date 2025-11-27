@@ -1,5 +1,7 @@
 CollisionShape2D
 Area2D
+ProgressBar
+TextureProgressBar
 RayCast2D
 Node2D
 Timer

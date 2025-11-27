@@ -1,45 +1,13 @@
-#extends CharacterBody2D
-#class_name Ennemis
-#
-#
-#
-## === CONSTANTES / VARIABLES ===
-#var GRAVITY: int = 400
-#var MAXFALLSPEED: int = 200
-#var MAXSPEED: int = 150
-#var JUMPFORCE: int = 300
-#
-#var ACCEL: int = 10
-#var vZero: Vector2 = Vector2.ZERO
-#
-#var facing_right: bool = true
-#var dir: float = 0.0
-#var motion: Vector2 = Vector2.ZERO
-#
-#var current_sprite: Sprite2D
-#var anim_player: AnimationPlayer
-#var state_machine: Node
-#
-## ===============================================================
-#func _ready() -> void:
-	#current_sprite = $Sprite2D
-	#anim_player = $AnimationPlayer
-	#state_machine = $StateMachine
-	#anim_player.play("Idle")
-	#
-#
-#func _physics_process(delta: float) -> void:
-	## Flip horizontal du sprite selon la direction
-	#current_sprite.flip_h = not facing_right
-	
-	
-	
-	
 extends CharacterBody2D
 
 var is_moving_left = false
 var gravity = 10
 var speed = 32
+
+var max_health = 3
+var health = max_health
+
+
 
 func _ready():
 	$AnimationPlayer.play("Walk")
@@ -71,16 +39,38 @@ func end_of_hit():
 func start_walk():
 	$AnimationPlayer.play("Walk")
 
-#func _on_PlayerDetector_body_entered(body):
-	#$AnimationPlayer.play("Attack")
-#
-#func _on_AttackDetector_body_entered(body):
-	#get_tree().reload_current_scene()
-
 
 func _on_player_detector_body_entered(body: Node2D) -> void:
 	$AnimationPlayer.play("Attack")
 
 
 func _on_attack_detector_body_entered(body: Node2D) -> void:
-	get_tree().reload_current_scene()
+	if body is Player:
+		var anim = body.get_node("AnimationPlayer")
+		
+		if anim.current_animation == "Attack":
+			# Le joueur tue l'ennemi (BON)
+			take_damage(1)
+			print("DIED ENNEMY")
+		#else:
+			## Le joueur se fait toucher (MAUVAIS)
+			#get_tree().call_deferred("reload_current_scene")
+			
+	
+	#get_tree().reload_current_scene()
+	
+	
+func take_damage(amount: int):
+	health -= amount
+	health = max(health, 0)
+
+	$HealthBar.value = health  # mise à jour de la barre de vie (si tu as une ProgressBar)
+
+	if health == 0:
+		die()
+		
+func die():
+	# On peut jouer une animation de mort si tu veux
+	$AnimationPlayer.play("Dead")
+	# Supprimer l’ennemi après l’animation
+	call_deferred("queue_free")
