@@ -93,7 +93,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ur6qk"]
-size = Vector2(18, 62)
+size = Vector2(14, 62)
 
 [node name="Ennemis" type="CharacterBody2D"]
 
@@ -110,5 +110,5 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 33)
+position = Vector2(0, 33)
 shape = SubResource("RectangleShape2D_ur6qk")

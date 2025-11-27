@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://q67wpag2pnyw"]
+
+[ext_resource type="PackedScene" uid="uid://dlr76ouxshr5g" path="res://Scenes/Player.tscn" id="1_6444e"]
+[ext_resource type="PackedScene" uid="uid://4rpobhcyro7j" path="res://Scenes/tiles.tscn" id="2_evi0p"]
+[ext_resource type="PackedScene" uid="uid://bh85lunuyk52p" path="res://Scenes/scene_trigger.tscn" id="3_lsmp6"]
+[ext_resource type="PackedScene" uid="uid://drknyey3pkq4e" path="res://Scenes/kill_zone.tscn" id="4_xrdnt"]
+[ext_resource type="PackedScene" uid="uid://cg34ajmm1age0" path="res://Scenes/Ennemis.tscn" id="5_wrinw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j60k"]
+size = Vector2(31, 112.25)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8j60k"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_6444e")]
+z_index = 1
+position = Vector2(-905, 113)
+
+[node name="Node2D" parent="." instance=ExtResource("2_evi0p")]
+position = Vector2(-1035, -345)
+
+[node name="Scene_trigger" parent="." instance=ExtResource("3_lsmp6")]
+position = Vector2(1496, -5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_trigger"]
+position = Vector2(-3, -30.875)
+shape = SubResource("RectangleShape2D_8j60k")
+
+[node name="kill_zone" parent="." instance=ExtResource("4_xrdnt")]
+position = Vector2(-82, 346)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone"]
+shape = SubResource("WorldBoundaryShape2D_8j60k")
+
+[node name="Ennemis" parent="." instance=ExtResource("5_wrinw")]
+position = Vector2(-624, 187)
+
+[node name="Ennemis2" parent="." instance=ExtResource("5_wrinw")]
+position = Vector2(102, 88)
+
+[node name="Ennemis3" parent="." instance=ExtResource("5_wrinw")]
+position = Vector2(1039, 106)
+
+[node name="Ennemis4" parent="." instance=ExtResource("5_wrinw")]
+position = Vector2(607, 183)

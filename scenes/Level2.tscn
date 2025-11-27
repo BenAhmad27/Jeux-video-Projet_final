@@ -10,7 +10,7 @@ size = Vector2(27, 67)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w60u7"]
 
-[node name="world2" type="Node2D"]
+[node name="Level2" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource("1_ar73u")]
 position = Vector2(0, -213)
@@ -20,7 +20,7 @@ position = Vector2(73, 220)
 
 [node name="Scene_trigger2" parent="." instance=ExtResource("3_wdtk5")]
 position = Vector2(12, 246)
-connected_scene = "world"
+connected_scene = ""
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_trigger2"]
 position = Vector2(1.5, -13.5)

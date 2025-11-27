@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bvtbomufloca" path="res://assets/img/tilesheet_complete_2X.png" id="2_wjbgu"]
 [ext_resource type="Texture2D" uid="uid://b1qkwq6gva125" path="res://assets/img/Terrain (16x16).png" id="3_gt8lh"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_st44a"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wjbgu"]
 texture = ExtResource("2_wjbgu")
 0:0/0 = 0
 1:0/0 = 0
@@ -11497,7 +11497,7 @@ texture = ExtResource("2_wjbgu")
 171:95/0 = 0
 172:95/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nftql"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gt8lh"]
 texture = ExtResource("3_gt8lh")
 0:0/0 = 0
 1:0/0 = 0
@@ -11681,8 +11681,8 @@ texture = ExtResource("3_gt8lh")
 
 [sub_resource type="TileSet" id="TileSet_yebxe"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_st44a")
-sources/1 = SubResource("TileSetAtlasSource_nftql")
+sources/0 = SubResource("TileSetAtlasSource_wjbgu")
+sources/1 = SubResource("TileSetAtlasSource_gt8lh")
 
 [node name="Node2D" type="Node2D"]
 
