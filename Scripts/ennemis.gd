@@ -46,9 +46,12 @@ func _on_player_detector_body_entered(body: Node2D) -> void:
 	$AnimationPlayer.play("Attack")
 
 
-#func _on_attack_detector_body_entered(body: Node2D) -> void:
+func _on_attack_detector_body_entered(body: Node2D) -> void:
+	if body is Player:
+		body.take_damage(1)  # Le joueur inflige 1 point de dégâts
+		print("Player HIT")
 		#get_tree().call_deferred("reload_current_scene")
-			#
+			
 
 	
 	
@@ -60,9 +63,11 @@ func take_damage(amount: int):
 
 	if health == 0:
 		die()
+		#get_tree().call_deferred("reload_current_scene")
 		
 func die():
 	# On peut jouer une animation de mort si tu veux
 	$AnimationPlayer.play("Dead")
 	# Supprimer l’ennemi après l’animation
 	call_deferred("queue_free")
+	

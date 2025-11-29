@@ -3,8 +3,9 @@ extends Area2D
 @onready var timer = $Timer
 
 func _on_body_entered(body: Node2D) -> void:
-	print("DIED") # Replace with function body.
-	timer.start()
+	if body is Player:
+		print("Player id DIED") # Replace with function body.
+		timer.start()
 
 
 func _on_timer_timeout() -> void:

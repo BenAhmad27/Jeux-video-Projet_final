@@ -18,7 +18,10 @@ var current_sprite: Sprite2D
 var anim_player: AnimationPlayer
 var state_machine: Node
 
-var health := 100
+var max_health = 7
+var health = max_health
+
+
 var attack_power := 1
 var attack_detector 
 
@@ -37,6 +40,8 @@ func _ready() -> void:
 	anim_player = $AnimationPlayer
 	state_machine = $StateMachine
 	attack_detector = $AttackDetector
+	$HealthBarPlayer.value = health 
+
 
 
 func _physics_process(delta: float) -> void:
@@ -54,18 +59,6 @@ func _process(delta):
 			print("ENNEMY HIT")
 			attack_timer = attack_cooldown
 
-# Quand un ennemi entre dans la zone de l'attackDetector
-#func _on_AttackDetector_body_entered(body: Node2D) -> void:
-	#if body is Ennemy:  # ou un test body.name == "Enemy"
-		#player_in_attack_zone = true
-		#enemy_ref = body
-#
-## Quand un ennemi sort de la zone de l'attackDetector
-#func _on_AttackDetector_body_exited(body: Node2D) -> void:
-	#if body == enemy_ref:
-		#player_in_attack_zone = false
-		#enemy_ref = null
-
 
 func _on_attack_detector_body_entered(body: Node2D) -> void:
 	if body is Ennemy:  # ou un test body.name == "Enemy"
@@ -77,3 +70,22 @@ func _on_attack_detector_body_exited(body: Node2D) -> void:
 	if body == enemy_ref:
 		player_in_attack_zone = false
 		enemy_ref = null
+		
+func take_damage(amount: int):
+	health -= amount
+	health = max(health, 0)
+
+	$HealthBarPlayer.value = health  # mise à jour de la barre de vie (si tu as une ProgressBar)
+
+	if health == 0:
+		die()
+		get_tree().call_deferred("reload_current_scene")
+		
+func die():
+	# On peut jouer une animation de mort si tu veux
+	$AnimationPlayer.play("Dead")
+	# Supprimer l’ennemi après l’animation
+	call_deferred("queue_free")
+		
+		
+		
