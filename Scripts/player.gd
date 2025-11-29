@@ -79,13 +79,14 @@ func take_damage(amount: int):
 
 	if health == 0:
 		die()
-		get_tree().call_deferred("reload_current_scene")
+		
 		
 func die():
 	# On peut jouer une animation de mort si tu veux
+	$StateMachine.set_process(false)
+	set_physics_process(false)
 	$AnimationPlayer.play("Dead")
 	# Supprimer l’ennemi après l’animation
-	call_deferred("queue_free")
-		
-		
+	await get_tree().create_timer(2.0).timeout
+	get_tree().call_deferred("reload_current_scene")
 		
