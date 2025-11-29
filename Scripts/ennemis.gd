@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Ennemy
 
-var is_moving_left = false
+var is_moving_left = true
 var gravity = 10
 var speed = 32
 
