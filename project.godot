@@ -10,14 +10,16 @@ config_version=5
 
 [application]
 
-config/name="c07_platformer_fsm"
+config/name="JeuxVideo ProjetFinal"
 run/main_scene="res://Scenes/world.tscn"
 config/features=PackedStringArray("4.4", "C#")
 config/icon="res://assets/img/icon.png"
 
 [display]
 
-window/stretch/scale=4.0
+window/size/viewport_width=1250
+window/size/viewport_height=650
+window/stretch/scale=2.27
 
 [dotnet]
 

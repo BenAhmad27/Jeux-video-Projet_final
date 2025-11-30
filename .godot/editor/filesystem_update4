@@ -11,3 +11,4 @@ res://Scenes/level_1.tscn
 res://Scripts/player.gd
 res://Scripts/ennemis.gd
 res://Scripts/kill_zone.gd
+res://Scenes/MainMenu.tscn

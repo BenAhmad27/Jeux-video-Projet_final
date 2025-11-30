@@ -6,6 +6,7 @@
 [sub_resource type="Animation" id="Animation_ymm73"]
 resource_name = "Attack"
 length = 0.5
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -13,10 +14,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.333333),
+"times": PackedFloat32Array(0, 0.133333, 0.233333, 0.366667),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3]
+"values": [5, 4, 2, 3]
 }
 tracks/1/type = "method"
 tracks/1/imported = false
@@ -181,7 +182,8 @@ position = Vector2(23, 34)
 shape = SubResource("RectangleShape2D_ur6qk")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(-9, 23)
+position = Vector2(-3, 31)
+target_position = Vector2(1, 42)
 
 [node name="PlayerDetector" type="Area2D" parent="."]
 position = Vector2(100, 0)

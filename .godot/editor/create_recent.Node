@@ -1,3 +1,7 @@
+Label
+Panel
+VBoxContainer
+Button
 CanvasLayer
 ProgressBar
 CollisionShape2D
@@ -8,7 +12,3 @@ Node2D
 Timer
 TileMap
 TextureRect
-AnimationPlayer
-Sprite2D
-CharacterBody2D
-Node
