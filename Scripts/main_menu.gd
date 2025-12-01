@@ -25,3 +25,22 @@ func _on_exit_pressed() -> void:
 
 func _on_cancel_pressed() -> void:
 	_ready()
+	
+func pause():
+	get_tree().paused = true
+	
+func resume():
+	get_tree().paused = false
+	
+func test_enter():
+	if Input.is_action_just_pressed("pause") and get_tree().paused == false:
+		pause()
+	elif Input.is_action_just_pressed("pause") and get_tree().paused == true:
+		resume()
+
+func _on_restart_pressed() -> void:
+	resume()
+	
+	
+func _process(delta):
+	test_enter()
