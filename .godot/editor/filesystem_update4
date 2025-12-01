@@ -12,3 +12,6 @@ res://Scripts/player.gd
 res://Scripts/ennemis.gd
 res://Scripts/kill_zone.gd
 res://Scenes/MainMenu.tscn
+res://Scripts/main_menu.gd
+res://default_bus_layout.tres
+res://Scripts/audio_control.gd

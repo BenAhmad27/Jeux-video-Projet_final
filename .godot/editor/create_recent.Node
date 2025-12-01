@@ -1,3 +1,5 @@
+HSlider
+AudioStreamPlayer2D
 Label
 Panel
 VBoxContainer
@@ -11,4 +13,3 @@ RayCast2D
 Node2D
 Timer
 TileMap
-TextureRect
