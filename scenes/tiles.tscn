@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b1qkwq6gva125" path="res://assets/img/Terrain (16x16).png" id="2_1nd0u"]
 [ext_resource type="Texture2D" uid="uid://bvtbomufloca" path="res://assets/img/tilesheet_complete_2X.png" id="3_1nd0u"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fdbhl"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1nd0u"]
 texture = ExtResource("2_1nd0u")
 0:0/0 = 0
 1:0/0 = 0
@@ -210,7 +210,7 @@ texture = ExtResource("2_1nd0u")
 20:10/0 = 0
 20:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_idipg"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fdbhl"]
 texture = ExtResource("3_1nd0u")
 0:0/0 = 0
 1:0/0 = 0
@@ -11734,8 +11734,8 @@ texture = ExtResource("3_1nd0u")
 
 [sub_resource type="TileSet" id="TileSet_idipg"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_fdbhl")
-sources/1 = SubResource("TileSetAtlasSource_idipg")
+sources/0 = SubResource("TileSetAtlasSource_1nd0u")
+sources/1 = SubResource("TileSetAtlasSource_fdbhl")
 
 [node name="Node2D" type="Node2D"]
 

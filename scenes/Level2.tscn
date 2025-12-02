@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7dh27w3jr2rx"]
+[gd_scene load_steps=8 format=3 uid="uid://b7dh27w3jr2rx"]
 
 [ext_resource type="PackedScene" uid="uid://ccku8bggcs2xb" path="res://Scenes/2nd_tiles.tscn" id="1_ar73u"]
 [ext_resource type="PackedScene" uid="uid://dlr76ouxshr5g" path="res://Scenes/Player.tscn" id="2_wdtk5"]
 [ext_resource type="PackedScene" uid="uid://bh85lunuyk52p" path="res://Scenes/scene_trigger.tscn" id="3_wdtk5"]
 [ext_resource type="PackedScene" uid="uid://drknyey3pkq4e" path="res://Scenes/kill_zone.tscn" id="4_bvv5j"]
+[ext_resource type="PackedScene" uid="uid://cg34ajmm1age0" path="res://Scenes/Ennemis.tscn" id="5_n3cqh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wdtk5"]
 size = Vector2(27, 67)
@@ -13,20 +14,36 @@ size = Vector2(27, 67)
 [node name="Level2" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource("1_ar73u")]
-position = Vector2(0, -213)
+position = Vector2(-1094, -344)
 
 [node name="Player" parent="." instance=ExtResource("2_wdtk5")]
-position = Vector2(73, 220)
+position = Vector2(-988, 96)
 
 [node name="Scene_trigger2" parent="." instance=ExtResource("3_wdtk5")]
-position = Vector2(12, 246)
+position = Vector2(1341, 241)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_trigger2"]
-position = Vector2(1.5, -13.5)
+position = Vector2(-2, -19)
 shape = SubResource("RectangleShape2D_wdtk5")
 
 [node name="kill_zone" parent="." instance=ExtResource("4_bvv5j")]
+position = Vector2(250, 299)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone"]
-position = Vector2(499, 314)
+position = Vector2(3, -1)
 shape = SubResource("WorldBoundaryShape2D_w60u7")
+
+[node name="Ennemis" parent="." instance=ExtResource("5_n3cqh")]
+position = Vector2(-651, 58)
+
+[node name="Ennemis2" parent="." instance=ExtResource("5_n3cqh")]
+position = Vector2(-153, 80)
+
+[node name="Ennemis3" parent="." instance=ExtResource("5_n3cqh")]
+position = Vector2(372, -8)
+
+[node name="Ennemis4" parent="." instance=ExtResource("5_n3cqh")]
+position = Vector2(915, -217)
+
+[node name="Ennemis5" parent="." instance=ExtResource("5_n3cqh")]
+position = Vector2(-428, -86)

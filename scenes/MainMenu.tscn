@@ -27,6 +27,7 @@ color = Color(0.375069, 0.563829, 0.849187, 1)
 thickness = 6
 
 [node name="MainMenu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -67,7 +68,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bnhvo")
 text = "Star Game"
 
 [node name="Restart" type="Button" parent="MainButtons"]
-process_mode = 3
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
@@ -123,6 +123,7 @@ grow_vertical = 0
 text = "Aboubacar Diallo"
 
 [node name="Options" type="Panel" parent="."]
+process_mode = 3
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -146,6 +147,7 @@ theme_override_font_sizes/font_size = 27
 text = "Musique"
 
 [node name="Cancel" type="Button" parent="Options"]
+layout_mode = 0
 offset_left = 132.0
 offset_top = 151.0
 offset_right = 231.0

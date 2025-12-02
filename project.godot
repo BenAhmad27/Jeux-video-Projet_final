@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="JeuxVideo ProjetFinal"
-run/main_scene="res://Scenes/world.tscn"
+run/main_scene="uid://d2m57c5j2esxh"
 config/features=PackedStringArray("4.4", "C#")
 config/icon="res://assets/img/icon.png"
+
+[autoload]
+
+Global="*res://Scripts/global.gd"
 
 [display]
 

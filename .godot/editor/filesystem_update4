@@ -1,6 +1,7 @@
 res://default_env.tres
-res://Scenes/Player.tscn
+res://Scenes/MainMenu.tscn
 res://Scenes/world.tscn
+res://Scenes/Player.tscn
 res://Scenes/tiles.tscn
 res://Scenes/2nd_tiles.tscn
 res://Scenes/Ennemis.tscn
@@ -8,10 +9,6 @@ res://Scenes/scene_trigger.tscn
 res://Scenes/Level2.tscn
 res://Scenes/kill_zone.tscn
 res://Scenes/level_1.tscn
-res://Scripts/player.gd
-res://Scripts/ennemis.gd
-res://Scripts/kill_zone.gd
-res://Scenes/MainMenu.tscn
-res://Scripts/main_menu.gd
-res://default_bus_layout.tres
-res://Scripts/audio_control.gd
+res://Scripts/global.gd
+res://Scripts/scene_trigger.gd
+res://Scripts/world.gd
