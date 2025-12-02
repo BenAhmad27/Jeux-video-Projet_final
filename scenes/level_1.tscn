@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://q67wpag2pnyw"]
+[gd_scene load_steps=9 format=3 uid="uid://q67wpag2pnyw"]
 
 [ext_resource type="PackedScene" uid="uid://dlr76ouxshr5g" path="res://Scenes/Player.tscn" id="1_6444e"]
 [ext_resource type="PackedScene" uid="uid://4rpobhcyro7j" path="res://Scenes/tiles.tscn" id="2_evi0p"]
 [ext_resource type="PackedScene" uid="uid://bh85lunuyk52p" path="res://Scenes/scene_trigger.tscn" id="3_lsmp6"]
 [ext_resource type="PackedScene" uid="uid://drknyey3pkq4e" path="res://Scenes/kill_zone.tscn" id="4_xrdnt"]
 [ext_resource type="PackedScene" uid="uid://cg34ajmm1age0" path="res://Scenes/Ennemis.tscn" id="5_wrinw"]
+[ext_resource type="AudioStream" uid="uid://bdym40iysajcy" path="res://assets/musique/principal.mp3" id="6_evi0p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j60k"]
 size = Vector2(31, 112.25)
@@ -45,3 +46,7 @@ position = Vector2(1039, 106)
 
 [node name="Ennemis4" parent="." instance=ExtResource("5_wrinw")]
 position = Vector2(607, 183)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_evi0p")
+autoplay = true
