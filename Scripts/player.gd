@@ -81,7 +81,9 @@ func die():
 	$StateMachine.set_process(false)
 	set_physics_process(false)
 	$AnimationPlayer.play("Dead")
+	Global.fail = true
+	Global.win = false
 	# Supprimer l’ennemi après l’animation
 	await get_tree().create_timer(2.0).timeout
-	get_tree().call_deferred("reload_current_scene")
+	Global.goto_scene("res://Scenes/final_scene.tscn")
 		

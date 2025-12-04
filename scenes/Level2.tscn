@@ -18,7 +18,7 @@ size = Vector2(50, 79)
 position = Vector2(-1094, -344)
 
 [node name="Player" parent="." instance=ExtResource("2_wdtk5")]
-position = Vector2(1146, 107)
+position = Vector2(-960, 175)
 
 [node name="kill_zone" parent="." instance=ExtResource("4_bvv5j")]
 position = Vector2(250, 299)

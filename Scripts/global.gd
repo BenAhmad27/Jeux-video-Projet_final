@@ -1,6 +1,7 @@
 extends Node
 
-var music_player
+var win: bool = false
+var fail: bool = false
 
 var max_health = 7
 var health = max_health

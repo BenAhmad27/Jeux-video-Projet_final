@@ -9,4 +9,6 @@ func _on_body_entered(body: Node2D) -> void:
 
 
 func _on_timer_timeout() -> void:
-	Global.goto_scene("res://Scenes/MainMenu.tscn")
+	Global.fail = true
+	Global.win = false
+	Global.goto_scene("res://Scenes/final_scene.tscn")

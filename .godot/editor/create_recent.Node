@@ -1,7 +1,8 @@
+Panel
+Label
 CollisionShape2D
 Area2D
 Sprite2D
-Label
 AudioStreamPlayer
 Node2D
 Button
@@ -11,5 +12,3 @@ ParallaxLayer
 ParallaxBackground
 HSlider
 AudioStreamPlayer2D
-Panel
-CanvasLayer

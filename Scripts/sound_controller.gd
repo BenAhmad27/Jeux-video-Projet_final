@@ -3,7 +3,8 @@ extends Node2D
 @export var mute: bool = false
 
 func _ready() -> void:
-	pass
+	if not mute:
+		play_music()
 		
 func play_music() -> void:
 	if not mute:
@@ -23,7 +24,12 @@ func stop_jump()->void:
 func stop_Attack()->void:
 	$Attack.stop()
 	
-func game_over_sound()-> void:
+func game_over_fail()-> void:
 	if not mute:
 		$Music.stop()
-		$GameOver.play()
+		$GameOverFail.play()
+		
+func game_over_win()-> void:
+	if not mute:
+		$Music.stop()
+		$GameOverWin.play()

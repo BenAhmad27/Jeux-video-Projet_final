@@ -15,3 +15,7 @@ res://game_over.gd
 res://Scenes/game_over.tscn
 res://Scripts/main_menu.gd
 res://Scripts/final_scene.gd
+res://Scripts/sound_controller.gd
+res://Scripts/global.gd
+res://Scripts/kill_zone.gd
+res://Scripts/player.gd
