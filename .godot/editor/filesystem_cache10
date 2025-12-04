@@ -1,7 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1764816745
+::res://::1764820209
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::8493356101575739205::1764610386::0::1::::<><><>0<>0<><>::
-default_env.tres::Environment::6769883681080497654::1764816745::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment::6769883681080497654::1764820209::0::1::::<><><>0<>0<><>::
+game_over.gd::GDScript::1920153171642794623::1764819746::0::1::::<>Area2D<><>0<>0<><>::
 tiles.tres::TileSet/TileSet::9063788566499977305::1762913354::0::1::::<><><>0<>0<><>::uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
 ::res://assets/::1764607605
 ::res://assets/img/::1764807838
@@ -13,41 +14,44 @@ player2.png::CompressedTexture2D/CompressedTexture2D::5533114321753023558::17646
 Terrain (16x16).png::CompressedTexture2D/CompressedTexture2D::4245008008303717612::1762913113::1762913917::1::::<><><>0<>0<>cdeae7e91898223fe0e58e705b953c04<>res://.godot/imported/Terrain (16x16).png-c6f978bba5fe93d143aa921d9508bf93.ctex::
 Xcharacter.png::CompressedTexture2D/CompressedTexture2D::5550969862778372166::1762448052::1762651710::1::::<><><>0<>0<>ae04aaca611bd6b08eb5ad41b266f827<>res://.godot/imported/Xcharacter.png-5f64257e1d80b66f4c535001b0e81296.ctex::
 Zombie.png::CompressedTexture2D/CompressedTexture2D::3555268739064995082::1764455667::1764455671::1::::<><><>0<>0<>418d6dde8c7df9f0017b1522d066db0b<>res://.godot/imported/Zombie.png-232ef4119c072d589f30651ad67c1afc.ctex::
-::res://assets/musique/::1764817019
-ambient-game-attack-steampunk-laser-3.mp3::AudioStreamMP3::7015746931383238125::1764815461::1764815706::1::::<><><>0<>0<>3e3010894a305e66bac28cfbe9deb429<>res://.godot/imported/ambient-game-attack-steampunk-laser-3.mp3-82f4d413084ecb5224c10f1e08e5a695.mp3str::
-gameover.mp3::AudioStreamMP3::29570343029780225::1764815639::1764815706::1::::<><><>0<>0<>72fd15da7d628df135e02e255ed0aa4e<>res://.godot/imported/gameover.mp3-43476208e5c2e669bb5b7b2b3469297a.mp3str::
-jump.mp3::AudioStreamMP3::6434449634375314407::1764817000::1764817024::1::::<><><>0<>0<>9a1b2eec155130db058c845eaa1409ed<>res://.godot/imported/jump.mp3-6e68151f18040a00ce321d27c3bc44b7.mp3str::
+::res://assets/musique/::1764817024
+ambient-game-attack-steampunk-laser-3.mp3::AudioStreamMP3/AudioStreamMP3::7015746931383238125::1764815461::1764815706::1::::<><><>0<>0<>3e3010894a305e66bac28cfbe9deb429<>res://.godot/imported/ambient-game-attack-steampunk-laser-3.mp3-82f4d413084ecb5224c10f1e08e5a695.mp3str::
+gameover.mp3::AudioStreamMP3/AudioStreamMP3::29570343029780225::1764815639::1764815706::1::::<><><>0<>0<>72fd15da7d628df135e02e255ed0aa4e<>res://.godot/imported/gameover.mp3-43476208e5c2e669bb5b7b2b3469297a.mp3str::
+jump.mp3::AudioStreamMP3/AudioStreamMP3::6434449634375314407::1764817000::1764817024::1::::<><><>0<>0<>9a1b2eec155130db058c845eaa1409ed<>res://.godot/imported/jump.mp3-6e68151f18040a00ce321d27c3bc44b7.mp3str::
 principal.mp3::AudioStreamMP3/AudioStreamMP3::2647313999197776032::1764607272::1764607668::1::::<><><>0<>0<>d94b50904ca68ed42def59cb35919af8<>res://.godot/imported/principal.mp3-5a9ce44a325b26fb13e3b0bd654d5bec.mp3str::
 ::res://docs/::1761665706
 histoire.md::TextFile/TextFile::-1::1761666515::0::1::::<><><>0<>0<><>::
 recherche.md::TextFile/TextFile::-1::1760027601::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1764816745
-2nd_tiles.tscn::PackedScene::4935136165325256811::1764816744::0::1::::<><><>0<>0<><>::uid://byejyakfbqqmf::::res://assets/img/Gray.png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png
-Ennemis.tscn::PackedScene::5253538290946078809::1764816744::0::1::::<><><>0<>0<><>::uid://bylfrhsdaa8es::::res://Scripts/ennemis.gd<>uid://bqwg0y0m8abm5::::res://assets/img/Zombie.png
-kill_zone.tscn::PackedScene::8373948598887488990::1764816744::0::1::::<><><>0<>0<><>::uid://cxhou8yy83cvs::::res://Scripts/kill_zone.gd
-Level1.tscn::PackedScene::1189000227978356962::1764816745::0::1::::<><><>0<>0<><>::uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://4rpobhcyro7j::::res://Scenes/tiles.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn<>uid://bdym40iysajcy::::res://assets/musique/principal.mp3
-Level2.tscn::PackedScene::4639131764774934749::1764816744::0::1::::<><><>0<>0<><>::uid://ccku8bggcs2xb::::res://Scenes/2nd_tiles.tscn<>uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn<>uid://bdym40iysajcy::::res://assets/musique/principal.mp3<>uid://2tjnj50s8fxf::::res://assets/img/Health Potion.png
-MainMenu.tscn::PackedScene::475456370583709680::1764816745::0::1::::<><><>0<>0<><>::uid://cg4h0yrnqcw1c::::res://Scripts/main_menu.gd<>uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://bdym40iysajcy::::res://assets/musique/principal.mp3<>uid://boda5tolkhune::::res://Scripts/audio_control.gd
-Player.tscn::PackedScene::7968432823588609150::1764816739::0::1::::<><><>0<>0<><>::uid://cc81arosgkpk2::::res://Scripts/player.gd<>uid://ck3jt4wpg85hy::::res://assets/img/player2.png<>uid://dgdicdh7jttys::::res://Scripts/state_machine.gd<>uid://bdr46y0atbtt8::::res://Scripts/idle_state.gd<>uid://bbkkxfn200tnv::::res://Scripts/run_state.gd<>uid://dq0uer3jyyoq1::::res://Scripts/fall_state.gd<>uid://b5kiirnf8pt4n::::res://Scripts/jump_state.gd<>uid://chjr3ffioi45r::::res://Scripts/attack_state.gd
-sound_controller.gd::GDScript::5566230604144731949::1764816427::0::1::::<>Node2D<><>0<>0<><>::
-sound_controller.tscn::PackedScene::133418165803771113::1764816745::0::1::::<><><>0<>0<><>::uid://clklaftg32qn2::::res://Scenes/sound_controller.gd<>uid://bdym40iysajcy::::res://assets/musique/principal.mp3<>uid://c67qld7kjssu4::::res://assets/musique/ambient-game-attack-steampunk-laser-3.mp3<>uid://olawh1723yj::::res://assets/musique/gameover.mp3
-scene_trigger.tscn::PackedScene::2947709280049917613::1764816744::0::1::::<><><>0<>0<><>::uid://5ds4mgn80elt::::res://Scripts/scene_trigger.gd
-tiles.tscn::PackedScene::2071506706788730249::1764816741::0::1::::<><><>0<>0<><>::uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
-world.tscn::PackedScene::9081012169378856909::1764816739::0::1::::<><><>0<>0<><>::uid://di2tl02sad6ms::::res://Scripts/world.gd<>uid://q67wpag2pnyw::::res://Scenes/Level1.tscn
-::res://Scripts/::1764816737
-attack_state.gd::GDScript::5283825134468647649::1764816592::0::1::::<>PlayerState<><>0<>0<><>::
+::res://Scenes/::1764820209
+2nd_tiles.tscn::PackedScene::4935136165325256811::1764820033::0::1::::<><><>0<>0<><>::uid://byejyakfbqqmf::::res://assets/img/Gray.png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png
+Ennemis.tscn::PackedScene::5253538290946078809::1764820033::0::1::::<><><>0<>0<><>::uid://bylfrhsdaa8es::::res://Scripts/ennemis.gd<>uid://bqwg0y0m8abm5::::res://assets/img/Zombie.png
+final_scene.gd::GDScript::96304811971022116::1764820194::0::1::::<>Control<><>0<>0<><>::
+final_scene.tscn::PackedScene::3536031616865328420::1764820177::0::1::::<><><>0<>0<><>::uid://cg4h0yrnqcw1c::::res://Scripts/main_menu.gd<>uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://ck3jt4wpg85hy::::res://assets/img/player2.png
+game_over.tscn::PackedScene::3111462601030694545::1764820035::0::1::::<><><>0<>0<><>::uid://2mev3m8y6pmt::::res://game_over.gd
+kill_zone.tscn::PackedScene::8373948598887488990::1764820034::0::1::::<><><>0<>0<><>::uid://cxhou8yy83cvs::::res://Scripts/kill_zone.gd
+Level1.tscn::PackedScene/PackedScene::1189000227978356962::1764818308::0::1::::<><><>0<>0<><>::uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://4rpobhcyro7j::::res://Scenes/tiles.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn
+Level2.tscn::PackedScene::4639131764774934749::1764820033::0::1::::<><><>0<>0<><>::uid://ccku8bggcs2xb::::res://Scenes/2nd_tiles.tscn<>uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn<>uid://bklhlmvfx7ygv::::res://Scenes/game_over.tscn<>uid://2tjnj50s8fxf::::res://assets/img/Health Potion.png
+MainMenu.tscn::PackedScene::475456370583709680::1764820034::0::1::::<><><>0<>0<><>::uid://cg4h0yrnqcw1c::::res://Scripts/main_menu.gd<>uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://boda5tolkhune::::res://Scripts/audio_control.gd
+Player.tscn::PackedScene::7968432823588609150::1764820028::0::1::::<><><>0<>0<><>::uid://cc81arosgkpk2::::res://Scripts/player.gd<>uid://ck3jt4wpg85hy::::res://assets/img/player2.png<>uid://dgdicdh7jttys::::res://Scripts/state_machine.gd<>uid://bdr46y0atbtt8::::res://Scripts/idle_state.gd<>uid://bbkkxfn200tnv::::res://Scripts/run_state.gd<>uid://dq0uer3jyyoq1::::res://Scripts/fall_state.gd<>uid://b5kiirnf8pt4n::::res://Scripts/jump_state.gd<>uid://chjr3ffioi45r::::res://Scripts/attack_state.gd
+scene_trigger.tscn::PackedScene::2947709280049917613::1764820033::0::1::::<><><>0<>0<><>::uid://5ds4mgn80elt::::res://Scripts/scene_trigger.gd
+sound_controller.tscn::PackedScene::133418165803771113::1764820209::0::1::::<><><>0<>0<><>::uid://clklaftg32qn2::::res://Scripts/sound_controller.gd<>uid://bdym40iysajcy::::res://assets/musique/principal.mp3<>uid://cxw5pe40dv6qt::::res://assets/musique/jump.mp3<>uid://c67qld7kjssu4::::res://assets/musique/ambient-game-attack-steampunk-laser-3.mp3<>uid://olawh1723yj::::res://assets/musique/gameover.mp3
+tiles.tscn::PackedScene::2071506706788730249::1764820030::0::1::::<><><>0<>0<><>::uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
+world.tscn::PackedScene::9081012169378856909::1764820028::0::1::::<><><>0<>0<><>::uid://di2tl02sad6ms::::res://Scripts/world.gd<>uid://q67wpag2pnyw::::res://Scenes/Level1.tscn
+::res://Scripts/::1764820209
+attack_state.gd::GDScript/GDScript::5283825134468647649::1764816592::0::1::::<>PlayerState<><>0<>0<><>::
 audio_control.gd::GDScript/GDScript::3375312221789246918::1764613836::0::1::::<>HSlider<><>0<>0<><>::
 base_state.gd::GDScript/GDScript::4408820515219093850::1763501189::0::1::::State<>Node<><>0<>0<><>::
 ennemis.gd::GDScript/GDScript::4093995425367026430::1764456074::0::1::::Ennemy<>CharacterBody2D<><>0<>0<><>::
 fall_state.gd::GDScript/GDScript::8335115412763691602::1763497036::0::1::::<>PlayerState<><>0<>0<><>::
-global.gd::GDScript::380129542368678784::1764812858::0::1::::<>Node<><>0<>0<><>::
+global.gd::GDScript/GDScript::380129542368678784::1764812858::0::1::::<>Node<><>0<>0<><>::
 idle_state.gd::GDScript/GDScript::2633899088033459819::1763497162::0::1::::<>PlayerState<><>0<>0<><>::
-jump_state.gd::GDScript::4513230705919339803::1764816737::0::1::::<>PlayerState<><>0<>0<><>::
-kill_zone.gd::GDScript::6402522940597707348::1764812926::0::1::::<>Area2D<><>0<>0<><>::
-main_menu.gd::GDScript::5254312335313342910::1764813350::0::1::::<>Control<><>0<>0<><>::
-player.gd::GDScript::4982923077708648219::1764811380::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+jump_state.gd::GDScript/GDScript::4513230705919339803::1764816737::0::1::::<>PlayerState<><>0<>0<><>::
+kill_zone.gd::GDScript/GDScript::6402522940597707348::1764812926::0::1::::<>Area2D<><>0<>0<><>::
+main_menu.gd::GDScript::5254312335313342910::1764820177::0::1::::<>Control<><>0<>0<><>::
+player.gd::GDScript/GDScript::4982923077708648219::1764811380::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 player_state.gd::GDScript/GDScript::2726113753242752090::1763500809::0::1::::PlayerState<>State<><>0<>0<><>::
 run_state.gd::GDScript/GDScript::2477901832019586451::1763502513::0::1::::<>PlayerState<><>0<>0<><>::
-scene_trigger.gd::GDScript::2113003776480964625::1764813065::0::1::::SceneTrigger<>Area2D<><>0<>0<><>::
+scene_trigger.gd::GDScript/GDScript::2113003776480964625::1764813065::0::1::::SceneTrigger<>Area2D<><>0<>0<><>::
+sound_controller.gd::GDScript::5566230604144731949::1764818941::0::1::::<>Node2D<><>0<>0<><>::
 state_machine.gd::GDScript/GDScript::7587077723550029814::1763500110::0::1::::StateMachine<>Node<><>0<>0<><>::
-world.gd::GDScript::7777685621750157502::1764813325::0::1::::<>RefCounted<><>0<>0<><>::
+world.gd::GDScript/GDScript::7777685621750157502::1764813325::0::1::::<>RefCounted<><>0<>0<><>::

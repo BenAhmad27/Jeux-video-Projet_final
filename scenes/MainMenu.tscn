@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://g1kxxxixsce7"]
+[gd_scene load_steps=8 format=3 uid="uid://g1kxxxixsce7"]
 
 [ext_resource type="Script" uid="uid://cg4h0yrnqcw1c" path="res://Scripts/main_menu.gd" id="1_853f1"]
 [ext_resource type="Texture2D" uid="uid://b8rv5yce6se3c" path="res://assets/img/Green.png" id="1_tt5f1"]
-[ext_resource type="AudioStream" uid="uid://bdym40iysajcy" path="res://assets/musique/principal.mp3" id="3_8saeu"]
 [ext_resource type="Script" uid="uid://boda5tolkhune" path="res://Scripts/audio_control.gd" id="3_ghw46"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_853f1"]
@@ -177,12 +176,6 @@ min_value = -80.0
 max_value = 10.0
 script = ExtResource("3_ghw46")
 audio_bus_name = "Musique"
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(-1, 0)
-stream = ExtResource("3_8saeu")
-autoplay = true
-bus = &"Musique"
 
 [connection signal="pressed" from="MainButtons/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MainButtons/Restart" to="." method="_on_restart_pressed"]

@@ -11,6 +11,7 @@ func _ready() -> void:
 
 func _on_start_pressed() -> void:
 	Global.goto_scene("res://Scenes/Level1.tscn")
+	SoundController.play_music()
 	
 
 func _on_settings_pressed() -> void:

@@ -1,0 +1,136 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqm46ojgig2tc"]
+
+[ext_resource type="Script" uid="uid://bmwej4qxpquu" path="res://Scripts/final_scene.gd" id="1_fi7pp"]
+[ext_resource type="Texture2D" uid="uid://b8rv5yce6se3c" path="res://assets/img/Green.png" id="2_fi7pp"]
+[ext_resource type="Texture2D" uid="uid://ck3jt4wpg85hy" path="res://assets/img/player2.png" id="3_fi7pp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_853f1"]
+texture = ExtResource("2_fi7pp")
+modulate_color = Color(0.366595, 0.366595, 0.366595, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnhvo"]
+bg_color = Color(0.631373, 0.945098, 0.992157, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="FinalScene" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fi7pp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_853f1")
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -183.0
+offset_top = -31.0
+offset_right = 60.0
+offset_bottom = 103.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start" type="Button" parent="MainButtons"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_bnhvo")
+text = "Star Game"
+
+[node name="Exit" type="Button" parent="MainButtons"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_bnhvo")
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.0
+offset_top = -113.0
+offset_right = 97.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Auto Survivor"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Aboubacar Diallo"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -207.0
+offset_top = 140.0
+offset_right = 371.0
+offset_bottom = 227.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Congratulations,
+ you found the remedy!"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(860, 364)
+texture = ExtResource("3_fi7pp")
+hframes = 7
+vframes = 6
+frame = 14
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(292, 370)
+texture = ExtResource("3_fi7pp")
+hframes = 8
+vframes = 6
+frame = 4
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(550, 525)
+texture = ExtResource("3_fi7pp")
+hframes = 8
+vframes = 6
+frame = 13
+
+[connection signal="pressed" from="MainButtons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MainButtons/Exit" to="." method="_on_exit_pressed"]

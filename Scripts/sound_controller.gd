@@ -3,8 +3,7 @@ extends Node2D
 @export var mute: bool = false
 
 func _ready() -> void:
-	if not mute:
-		play_music()
+	pass
 		
 func play_music() -> void:
 	if not mute:

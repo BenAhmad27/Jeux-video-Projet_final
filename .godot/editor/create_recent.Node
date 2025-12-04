@@ -1,6 +1,9 @@
+CollisionShape2D
+Area2D
+Sprite2D
+Label
 AudioStreamPlayer
 Node2D
-Sprite2D
 Button
 VBoxContainer
 Control
@@ -8,7 +11,5 @@ ParallaxLayer
 ParallaxBackground
 HSlider
 AudioStreamPlayer2D
-Label
 Panel
 CanvasLayer
-ProgressBar
