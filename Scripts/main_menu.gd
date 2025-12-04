@@ -9,8 +9,8 @@ func _ready() -> void:
 	main_buttons.visible = true
 	options.visible = false	
 
-#func _on_start_pressed() -> void:
-	#get_tree().change_scene_to_file("res://Scenes/world.tscn")
+func _on_start_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/world.tscn")
 	
 
 func _on_settings_pressed() -> void:

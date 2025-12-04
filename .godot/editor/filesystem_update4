@@ -1,5 +1,6 @@
 res://default_env.tres
 res://Scenes/level_1.tscn
+res://Scripts/kill_zone.gd
 res://Scenes/world.tscn
 res://Scenes/Player.tscn
 res://Scenes/tiles.tscn
@@ -9,5 +10,8 @@ res://Scenes/scene_trigger.tscn
 res://Scenes/Level2.tscn
 res://Scenes/kill_zone.tscn
 res://Scenes/MainMenu.tscn
+res://Scripts/scene_trigger.gd
 res://Scripts/main_menu.gd
+res://Scripts/world.gd
 res://Scripts/player.gd
+res://Scripts/global.gd

@@ -18,11 +18,7 @@ var current_sprite: Sprite2D
 var anim_player: AnimationPlayer
 var state_machine: Node
 
-var max_health = 7
-var health = max_health
 
-
-var attack_power := 1
 var attack_detector 
 
 var player_in_attack_zone = false
@@ -40,7 +36,7 @@ func _ready() -> void:
 	anim_player = $AnimationPlayer
 	state_machine = $StateMachine
 	attack_detector = $AttackDetector
-	$HealthBarPlayer.value = health 
+	$HealthBarPlayer.value = Global.health 
 
 
 
@@ -56,7 +52,6 @@ func _process(delta):
 	if anim_player.current_animation == "Attack" and attack_timer <= 0:
 		if enemy_ref and enemy_ref.has_method("take_damage"):
 			enemy_ref.take_damage(1)  # Le joueur inflige 1 point de dégâts
-			print("ENNEMY HIT")
 			attack_timer = attack_cooldown
 
 
@@ -72,12 +67,12 @@ func _on_attack_detector_body_exited(body: Node2D) -> void:
 		enemy_ref = null
 		
 func take_damage(amount: int):
-	health -= amount
-	health = max(health, 0)
+	Global.health -= amount
+	Global.health = max(Global.health, 0)
 
-	$HealthBarPlayer.value = health  # mise à jour de la barre de vie (si tu as une ProgressBar)
+	$HealthBarPlayer.value = Global.health  # mise à jour de la barre de vie (si tu as une ProgressBar)
 
-	if health == 0:
+	if Global.health == 0:
 		die()
 		
 		

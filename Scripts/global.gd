@@ -2,4 +2,5 @@ extends Node
 
 var music_player
 
-var firstlevel = true
+var max_health = 7
+var health = max_health
