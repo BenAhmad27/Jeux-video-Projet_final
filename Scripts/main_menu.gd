@@ -10,7 +10,7 @@ func _ready() -> void:
 	options.visible = false	
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/world.tscn")
+	Global.goto_scene("res://Scenes/Level1.tscn")
 	
 
 func _on_settings_pressed() -> void:

@@ -7,6 +7,7 @@ func enter(message: Dictionary = {}):
 
 	# Lecture de l'animation Attack
 	_player.anim_player.play("Attack")
+	SoundController.play_Attack()
 
 	# Connexion du signal d'animation terminée
 	_player.anim_player.animation_finished.connect(_on_animation_finished)
@@ -28,6 +29,7 @@ func physics_update(delta: float) -> void:
 	if _animation_finished:
 		if not _player.is_on_floor():
 			_state_machine.transition_to("Fall")
+			SoundController.stop_Attack()
 			return
 
 		_state_machine.transition_to("Idle")
