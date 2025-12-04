@@ -19,3 +19,4 @@ res://Scenes/Level1.tscn
 res://Scenes/sound_controller.tscn
 res://Scenes/sound_controller.gd
 res://Scripts/attack_state.gd
+res://Scripts/jump_state.gd

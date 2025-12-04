@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b5vm3vbvuild"]
+[gd_scene load_steps=6 format=3 uid="uid://b5vm3vbvuild"]
 
 [ext_resource type="Script" uid="uid://clklaftg32qn2" path="res://Scenes/sound_controller.gd" id="1_jrkua"]
 [ext_resource type="AudioStream" uid="uid://bdym40iysajcy" path="res://assets/musique/principal.mp3" id="2_h4t62"]
+[ext_resource type="AudioStream" uid="uid://cxw5pe40dv6qt" path="res://assets/musique/jump.mp3" id="3_h4t62"]
 [ext_resource type="AudioStream" uid="uid://c67qld7kjssu4" path="res://assets/musique/ambient-game-attack-steampunk-laser-3.mp3" id="3_nt2od"]
 [ext_resource type="AudioStream" uid="uid://olawh1723yj" path="res://assets/musique/gameover.mp3" id="4_564iv"]
 
@@ -13,6 +14,7 @@ stream = ExtResource("2_h4t62")
 parameters/looping = true
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_h4t62")
 
 [node name="Attack" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_nt2od")

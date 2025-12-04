@@ -3,6 +3,7 @@ extends PlayerState
 func enter(message: Dictionary = {}) -> void:
 	_player.motion.y = -_player.JUMPFORCE
 	_player.anim_player.play("Jump")
+	SoundController.play_jump()
 
 	print("Entering : %s" % self.get_class())
 
@@ -28,3 +29,4 @@ func physics_update(delta: float) -> void:
 	# Quand le joueur commence à retomber
 	if _player.motion.y > 0:
 		_state_machine.transition_to("Fall")
+		SoundController.stop_jump()
