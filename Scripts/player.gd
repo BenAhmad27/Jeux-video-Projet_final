@@ -83,7 +83,6 @@ func die():
 	$AnimationPlayer.play("Dead")
 	Global.fail = true
 	Global.win = false
-	# Supprimer l’ennemi après l’animation
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(3.0).timeout
 	Global.goto_scene("res://Scenes/final_scene.tscn")
 		

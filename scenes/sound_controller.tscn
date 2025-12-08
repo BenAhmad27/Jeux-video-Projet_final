@@ -12,6 +12,8 @@ script = ExtResource("1_jrkua")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_h4t62")
+volume_db = -18.39
+bus = &"Music"
 parameters/looping = true
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]

@@ -1,6 +1,8 @@
 extends Node2D
 
 @export var mute: bool = false
+var volume: float
+
 
 func _ready() -> void:
 	if not mute:
@@ -33,3 +35,6 @@ func game_over_win()-> void:
 	if not mute:
 		$Music.stop()
 		$GameOverWin.play()
+		
+func set_volume(value: float):
+	$Music.volume_db = value

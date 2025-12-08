@@ -1,4 +1,5 @@
 res://default_env.tres
+res://Scenes/sound_controller.tscn
 res://Scenes/world.tscn
 res://Scenes/Player.tscn
 res://Scenes/tiles.tscn
@@ -9,13 +10,7 @@ res://Scenes/Level2.tscn
 res://Scenes/kill_zone.tscn
 res://Scenes/final_scene.tscn
 res://Scenes/MainMenu.tscn
-res://Scenes/sound_controller.tscn
-res://Scenes/sound_controller.gd
-res://game_over.gd
 res://Scenes/game_over.tscn
-res://Scripts/main_menu.gd
-res://Scripts/final_scene.gd
+res://default_bus_layout.tres
+res://Scripts/audio_control.gd
 res://Scripts/sound_controller.gd
-res://Scripts/global.gd
-res://Scripts/kill_zone.gd
-res://Scripts/player.gd

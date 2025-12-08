@@ -214,6 +214,7 @@ La touche 'ESPACE' pour sauter, 'J' pour Attaquer et 'ENTER' pour
 mettre en pause le jeu. "
 
 [node name="Cancel" type="Button" parent="Instructions"]
+layout_mode = 0
 offset_left = 132.0
 offset_top = 151.0
 offset_right = 231.0
