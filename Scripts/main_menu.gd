@@ -13,6 +13,9 @@ func _ready() -> void:
 	instructions.visible = false
 
 func _on_start_pressed() -> void:
+	if Global.first_time == false:
+		SoundController.play_music()
+		
 	Global.goto_scene("res://Scenes/Level1.tscn")
 	
 
@@ -25,6 +28,7 @@ func _on_settings_pressed() -> void:
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
+
 
 
 func _on_cancel_pressed() -> void:
@@ -41,16 +45,6 @@ func test_enter():
 		pause()
 	elif Input.is_action_just_pressed("pause") and get_tree().paused == true:
 		resume()
-
-func _on_restart_pressed() -> void:
-	resume()
-	
-	
-func _process(delta):
-	test_enter()
-	
-	
-
 
 func _on_intructions_pressed() -> void:
 	main_buttons.visible = false

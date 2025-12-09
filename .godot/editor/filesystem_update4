@@ -14,3 +14,8 @@ res://Scenes/game_over.tscn
 res://default_bus_layout.tres
 res://Scripts/audio_control.gd
 res://Scripts/sound_controller.gd
+res://Scripts/global.gd
+res://Scripts/final_scene.gd
+res://Scenes/Level1.tscn
+res://Scripts/main_menu.gd
+res://Scenes/global.tscn

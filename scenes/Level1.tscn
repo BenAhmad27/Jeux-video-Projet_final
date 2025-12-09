@@ -12,11 +12,11 @@ size = Vector2(31, 112.25)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8j60k"]
 
 [node name="Level1" type="Node2D"]
-position = Vector2(-70, -11)
+position = Vector2(-92, 4)
 
 [node name="Player" parent="." instance=ExtResource("1_6444e")]
 z_index = 1
-position = Vector2(-952, 139)
+position = Vector2(-924, 134)
 
 [node name="Node2D" parent="." instance=ExtResource("2_evi0p")]
 position = Vector2(-1035, -345)

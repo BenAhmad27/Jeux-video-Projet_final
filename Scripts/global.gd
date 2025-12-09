@@ -3,6 +3,10 @@ extends Node
 var win: bool = false
 var fail: bool = false
 
+var pause: bool = false
+
+var first_time: bool = true
+
 var max_health = 7
 var health = max_health
 
@@ -41,3 +45,16 @@ func _deferred_goto_scene(path):
 
 	# Optionally, to make it compatible with the SceneTree.change_scene_to_file() API.
 	get_tree().current_scene = current_scene
+
+func toggle_pause()->void:
+	if Input.is_action_just_pressed("pause"):
+		if pause == true:
+			get_tree().paused = true
+		else:
+			get_tree().paused = false
+			
+		pause = !pause
+	
+			
+func _process(delta: float) -> void:
+	toggle_pause()

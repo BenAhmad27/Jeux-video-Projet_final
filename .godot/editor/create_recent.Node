@@ -1,3 +1,6 @@
+Node
+VBoxContainer
+Button
 Panel
 Label
 CollisionShape2D
@@ -5,8 +8,6 @@ Area2D
 Sprite2D
 AudioStreamPlayer
 Node2D
-Button
-VBoxContainer
 Control
 ParallaxLayer
 ParallaxBackground

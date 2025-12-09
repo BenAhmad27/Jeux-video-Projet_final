@@ -210,7 +210,8 @@ theme_override_font_sizes/font_size = 12
 text = "Instructions:
 Utiliser les lettres A et D ou les fleches pour 
 se déplacer respectivement à gauche et à droite.
-La touche 'ESPACE' pour sauter, 'J' pour Attaquer et 'ENTER' pour 
+La touche 'ESPACE' pour sauter, 'J' pour Attaquer, M pour
+désactiver le son et 'ENTER' pour 
 mettre en pause le jeu. "
 
 [node name="Cancel" type="Button" parent="Instructions"]
