@@ -1,17 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1765248531
+::res://::1765281410
 default_bus_layout.tres::AudioBusLayout::8493356101575739205::1765208205::0::1::::<><><>0<>0<><>::
-default_env.tres::Environment::6769883681080497654::1765248531::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment::6769883681080497654::1765281410::0::1::::<><><>0<>0<><>::
 game_over.gd::GDScript::1920153171642794623::1764867271::0::1::::<>Area2D<><>0<>0<><>::
-README.md::TextFile::-1::1765254689::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1765282340::0::1::::<><><>0<>0<><>::
 tiles.tres::TileSet/TileSet::9063788566499977305::1762913354::0::1::::<><><>0<>0<><>::uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
 ::res://assets/::1764607605
-::res://assets/img/::1765254895
+::res://assets/img/::1765282423
 Gray.png::CompressedTexture2D/CompressedTexture2D::4079799769687938445::1762913112::1763053161::1::::<><><>0<>0<>1ff5085f92471d75009cabd6845bbec4<>res://.godot/imported/Gray.png-9ee9a6da5c843cad08f83a8b5c67a318.ctex::
 Green.png::CompressedTexture2D/CompressedTexture2D::4739076840106321994::1762913112::1762913734::1::::<><><>0<>0<>bb2c5b7dfecaa5e04594575d89506129<>res://.godot/imported/Green.png-f5e9a71d3198ccf1a49c40abcdcbfb75.ctex::
 Health Potion.png::CompressedTexture2D/CompressedTexture2D::1934892144025198959::1764475330::1764475743::1::::<><><>0<>0<>78ec9f6a77a863b71dc2289214c7adde<>res://.godot/imported/Health Potion.png-2ce214ed9302cd080a2c8d1b39e9ab4d.ctex::
 icon.png::CompressedTexture2D/CompressedTexture2D::2874141365301704927::1760028688::1762584768::1::::<><><>0<>0<>7ce7ed27a0f68e43a7472a6cb77f36be<>res://.godot/imported/icon.png-859001d62588b6d9cb01a8eba79b6466.ctex::
+Idle.png::CompressedTexture2D::7042092828632505183::1765282376::1765282431::1::::<><><>0<>0<>8e52006d63de9a5626f4260de18f9018<>res://.godot/imported/Idle.png-a5f409f609208b78e9fc15f8fad71e1f.ctex::
+Jump.png::CompressedTexture2D::2122443452513474395::1765282423::1765282431::1::::<><><>0<>0<>1d11954e87580e18b899b4865194be16<>res://.godot/imported/Jump.png-124eb7c6188d406a0d9c1cee2d842081.ctex::
 player2.png::CompressedTexture2D/CompressedTexture2D::5533114321753023558::1764690918::1764691117::1::::<><><>0<>0<>55d6a0e5905f1394a5cc38fb77fd0834<>res://.godot/imported/player2.png-c8b187723e7d3e063a580f83cf79c616.ctex::
+RayCast1.png::CompressedTexture2D::6991914406235259551::1765281516::1765281649::1::::<><><>0<>0<>fb1fbd7d9a3a3127ebdd4e03c8df1030<>res://.godot/imported/RayCast1.png-ef4c42465509abcbe2a4ff9302709bd9.ctex::
+RayCast2.png::CompressedTexture2D::4353208218727314031::1765281562::1765281649::1::::<><><>0<>0<>fb7bc783e8e0904ab1c38ca3c0aeab9f<>res://.godot/imported/RayCast2.png-ac4fbc0b50ffd86cbf91314bcf8e7518.ctex::
 Singleton1.png::CompressedTexture2D::2132287173155427685::1765254842::1765254850::1::::<><><>0<>0<>609e7bc9817028d5e9e55d731691680c<>res://.godot/imported/Singleton1.png-ee24ff4e003afe0f233a6727e512f62b.ctex::
 Singleton2.png::CompressedTexture2D::2341233886032056419::1765254895::1765254897::1::::<><><>0<>0<>3f3d6bc134307196981215a8e996e417<>res://.godot/imported/Singleton2.png-70d7c2ae35e0ba86cdd1886499cf7538.ctex::
 Terrain (16x16).png::CompressedTexture2D/CompressedTexture2D::4245008008303717612::1762913113::1762913917::1::::<><><>0<>0<>cdeae7e91898223fe0e58e705b953c04<>res://.godot/imported/Terrain (16x16).png-c6f978bba5fe93d143aa921d9508bf93.ctex::
@@ -26,29 +30,29 @@ principal.mp3::AudioStreamMP3/AudioStreamMP3::2647313999197776032::1764607272::1
 ::res://docs/::1761665706
 histoire.md::TextFile/TextFile::-1::1765249124::0::1::::<><><>0<>0<><>::
 recherche.md::TextFile/TextFile::-1::1760027601::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1765248531
-2nd_tiles.tscn::PackedScene::4935136165325256811::1765248528::0::1::::<><><>0<>0<><>::uid://byejyakfbqqmf::::res://assets/img/Gray.png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png
-Ennemis.tscn::PackedScene::5253538290946078809::1765248529::0::1::::<><><>0<>0<><>::uid://bylfrhsdaa8es::::res://Scripts/ennemis.gd<>uid://bqwg0y0m8abm5::::res://assets/img/Zombie.png
-final_scene.tscn::PackedScene::3536031616865328420::1765248530::0::1::::<><><>0<>0<><>::uid://bmwej4qxpquu::::res://Scripts/final_scene.gd<>uid://b8rv5yce6se3c::::res://assets/img/Green.png
-game_over.tscn::PackedScene::3111462601030694545::1765248530::0::1::::<><><>0<>0<><>::uid://2mev3m8y6pmt::::res://game_over.gd
-kill_zone.tscn::PackedScene::8373948598887488990::1765248529::0::1::::<><><>0<>0<><>::uid://cxhou8yy83cvs::::res://Scripts/kill_zone.gd
-Level1.tscn::PackedScene::1189000227978356962::1765248531::0::1::::<><><>0<>0<><>::uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://4rpobhcyro7j::::res://Scenes/tiles.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn
-Level2.tscn::PackedScene::4639131764774934749::1765248529::0::1::::<><><>0<>0<><>::uid://ccku8bggcs2xb::::res://Scenes/2nd_tiles.tscn<>uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn<>uid://bklhlmvfx7ygv::::res://Scenes/game_over.tscn<>uid://2tjnj50s8fxf::::res://assets/img/Health Potion.png
-MainMenu.tscn::PackedScene::475456370583709680::1765248530::0::1::::<><><>0<>0<><>::uid://cg4h0yrnqcw1c::::res://Scripts/main_menu.gd<>uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://boda5tolkhune::::res://Scripts/audio_control.gd
-Player.tscn::PackedScene::7968432823588609150::1765248523::0::1::::<><><>0<>0<><>::uid://cc81arosgkpk2::::res://Scripts/player.gd<>uid://ck3jt4wpg85hy::::res://assets/img/player2.png<>uid://dgdicdh7jttys::::res://Scripts/state_machine.gd<>uid://bdr46y0atbtt8::::res://Scripts/idle_state.gd<>uid://bbkkxfn200tnv::::res://Scripts/run_state.gd<>uid://dq0uer3jyyoq1::::res://Scripts/fall_state.gd<>uid://b5kiirnf8pt4n::::res://Scripts/jump_state.gd<>uid://chjr3ffioi45r::::res://Scripts/attack_state.gd
-global.tscn::PackedScene::991600133457051974::1765248531::0::1::::<><><>0<>0<><>::uid://foexb2dqberg::::res://Scripts/global.gd
-scene_trigger.tscn::PackedScene::2947709280049917613::1765248529::0::1::::<><><>0<>0<><>::uid://5ds4mgn80elt::::res://Scripts/scene_trigger.gd
-sound_controller.tscn::PackedScene::133418165803771113::1765248530::0::1::::<><><>0<>0<><>::uid://clklaftg32qn2::::res://Scripts/sound_controller.gd<>uid://bdym40iysajcy::::res://assets/musique/principal.mp3<>uid://cxw5pe40dv6qt::::res://assets/musique/jump.mp3<>uid://c67qld7kjssu4::::res://assets/musique/ambient-game-attack-steampunk-laser-3.mp3<>uid://olawh1723yj::::res://assets/musique/gameover.mp3<>uid://cprpsi2fjc0k1::::res://assets/musique/game-win.mp3
-tiles.tscn::PackedScene::2071506706788730249::1765248526::0::1::::<><><>0<>0<><>::uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
-world.tscn::PackedScene::9081012169378856909::1765248523::0::1::::<><><>0<>0<><>::uid://di2tl02sad6ms::::res://Scripts/world.gd<>uid://q67wpag2pnyw::::res://Scenes/Level1.tscn
-::res://Scripts/::1765247110
+::res://Scenes/::1765281410
+2nd_tiles.tscn::PackedScene::4935136165325256811::1765281407::0::1::::<><><>0<>0<><>::uid://byejyakfbqqmf::::res://assets/img/Gray.png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png
+Ennemis.tscn::PackedScene::5253538290946078809::1765281407::0::1::::<><><>0<>0<><>::uid://bylfrhsdaa8es::::res://Scripts/ennemis.gd<>uid://bqwg0y0m8abm5::::res://assets/img/Zombie.png
+final_scene.tscn::PackedScene::3536031616865328420::1765281408::0::1::::<><><>0<>0<><>::uid://bmwej4qxpquu::::res://Scripts/final_scene.gd<>uid://b8rv5yce6se3c::::res://assets/img/Green.png
+game_over.tscn::PackedScene::3111462601030694545::1765281409::0::1::::<><><>0<>0<><>::uid://2mev3m8y6pmt::::res://game_over.gd
+kill_zone.tscn::PackedScene::8373948598887488990::1765281408::0::1::::<><><>0<>0<><>::uid://cxhou8yy83cvs::::res://Scripts/kill_zone.gd
+Level1.tscn::PackedScene::1189000227978356962::1765281409::0::1::::<><><>0<>0<><>::uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://4rpobhcyro7j::::res://Scenes/tiles.tscn<>uid://bh85lunuyk52p::::res://Scenes/scene_trigger.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn
+Level2.tscn::PackedScene::4639131764774934749::1765281408::0::1::::<><><>0<>0<><>::uid://ccku8bggcs2xb::::res://Scenes/2nd_tiles.tscn<>uid://dlr76ouxshr5g::::res://Scenes/Player.tscn<>uid://drknyey3pkq4e::::res://Scenes/kill_zone.tscn<>uid://cg34ajmm1age0::::res://Scenes/Ennemis.tscn<>uid://bklhlmvfx7ygv::::res://Scenes/game_over.tscn<>uid://2tjnj50s8fxf::::res://assets/img/Health Potion.png
+MainMenu.tscn::PackedScene::475456370583709680::1765281409::0::1::::<><><>0<>0<><>::uid://cg4h0yrnqcw1c::::res://Scripts/main_menu.gd<>uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://boda5tolkhune::::res://Scripts/audio_control.gd
+Player.tscn::PackedScene::7968432823588609150::1765281402::0::1::::<><><>0<>0<><>::uid://cc81arosgkpk2::::res://Scripts/player.gd<>uid://ck3jt4wpg85hy::::res://assets/img/player2.png<>uid://dgdicdh7jttys::::res://Scripts/state_machine.gd<>uid://bdr46y0atbtt8::::res://Scripts/idle_state.gd<>uid://bbkkxfn200tnv::::res://Scripts/run_state.gd<>uid://dq0uer3jyyoq1::::res://Scripts/fall_state.gd<>uid://b5kiirnf8pt4n::::res://Scripts/jump_state.gd<>uid://chjr3ffioi45r::::res://Scripts/attack_state.gd
+global.tscn::PackedScene::991600133457051974::1765281410::0::1::::<><><>0<>0<><>::uid://foexb2dqberg::::res://Scripts/global.gd
+scene_trigger.tscn::PackedScene::2947709280049917613::1765281408::0::1::::<><><>0<>0<><>::uid://5ds4mgn80elt::::res://Scripts/scene_trigger.gd
+sound_controller.tscn::PackedScene::133418165803771113::1765281409::0::1::::<><><>0<>0<><>::uid://clklaftg32qn2::::res://Scripts/sound_controller.gd<>uid://bdym40iysajcy::::res://assets/musique/principal.mp3<>uid://cxw5pe40dv6qt::::res://assets/musique/jump.mp3<>uid://c67qld7kjssu4::::res://assets/musique/ambient-game-attack-steampunk-laser-3.mp3<>uid://olawh1723yj::::res://assets/musique/gameover.mp3<>uid://cprpsi2fjc0k1::::res://assets/musique/game-win.mp3
+tiles.tscn::PackedScene::2071506706788730249::1765281405::0::1::::<><><>0<>0<><>::uid://b8rv5yce6se3c::::res://assets/img/Green.png<>uid://b1qkwq6gva125::::res://assets/img/Terrain (16x16).png<>uid://bvtbomufloca::::res://assets/img/tilesheet_complete_2X.png
+world.tscn::PackedScene::9081012169378856909::1765281402::0::1::::<><><>0<>0<><>::uid://di2tl02sad6ms::::res://Scripts/world.gd<>uid://q67wpag2pnyw::::res://Scenes/Level1.tscn
+::res://Scripts/::1765280284
 attack_state.gd::GDScript/GDScript::5283825134468647649::1764816592::0::1::::<>PlayerState<><>0<>0<><>::
 audio_control.gd::GDScript::3375312221789246918::1765212587::0::1::::<>HSlider<><>0<>0<><>::
 base_state.gd::GDScript/GDScript::4408820515219093850::1763501189::0::1::::State<>Node<><>0<>0<><>::
-ennemis.gd::GDScript/GDScript::4093995425367026430::1764456074::0::1::::Ennemy<>CharacterBody2D<><>0<>0<><>::
+ennemis.gd::GDScript::4093995425367026430::1765280241::0::1::::Ennemy<>CharacterBody2D<><>0<>0<><>::
 fall_state.gd::GDScript/GDScript::8335115412763691602::1763497036::0::1::::<>PlayerState<><>0<>0<><>::
 final_scene.gd::GDScript::96304811971022116::1765244259::0::1::::<>Control<><>0<>0<><>::
-global.gd::GDScript::380129542368678784::1765247110::0::1::::<>Node<><>0<>0<><>::
+global.gd::GDScript::380129542368678784::1765280284::0::1::::<>Node<><>0<>0<><>::
 idle_state.gd::GDScript/GDScript::2633899088033459819::1763497162::0::1::::<>PlayerState<><>0<>0<><>::
 jump_state.gd::GDScript/GDScript::4513230705919339803::1764816737::0::1::::<>PlayerState<><>0<>0<><>::
 kill_zone.gd::GDScript::6402522940597707348::1764867189::0::1::::<>Area2D<><>0<>0<><>::

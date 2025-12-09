@@ -19,3 +19,4 @@ res://Scripts/final_scene.gd
 res://Scenes/Level1.tscn
 res://Scripts/main_menu.gd
 res://Scenes/global.tscn
+res://Scripts/ennemis.gd

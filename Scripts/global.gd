@@ -62,3 +62,4 @@ func toggle_collision()->void:
 			
 func _process(delta: float) -> void:
 	toggle_pause()
+	toggle_collision()

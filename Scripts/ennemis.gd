@@ -28,6 +28,7 @@ func move_character():
 	move_and_slide()
 
 func detect_turn_around():
+	#Raycast
 	if not $RayCast2D.is_colliding() and is_on_floor():
 		is_moving_left = !is_moving_left
 		scale.x = -scale.x
@@ -52,9 +53,6 @@ func _on_attack_detector_body_entered(body: Node2D) -> void:
 		print("Player HIT")
 		#get_tree().call_deferred("reload_current_scene")
 			
-
-	
-	
 func take_damage(amount: int):
 	health -= amount
 	health = max(health, 0)
