@@ -54,6 +54,10 @@ func toggle_pause()->void:
 			get_tree().paused = false
 			
 		pause = !pause
+		
+func toggle_collision()->void:
+	if Input.is_action_just_pressed("Collision shapes"):
+		get_tree().debug_collisions_hint = !get_tree().debug_collisions_hint
 	
 			
 func _process(delta: float) -> void:
