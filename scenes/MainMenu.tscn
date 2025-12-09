@@ -14,8 +14,7 @@ corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
+shadow_size = 1
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_8saeu"]
 color = Color(0.988869, 0.964972, 0.990527, 1)
@@ -211,14 +210,15 @@ text = "Instructions:
 Utiliser les lettres A et D ou les fleches pour 
 se déplacer respectivement à gauche et à droite.
 La touche 'ESPACE' pour sauter, 'J' pour Attaquer, M pour
-désactiver le son et 'ENTER' pour 
-mettre en pause le jeu. "
+désactiver le son , U pour afficher les données pour les
+geeks  (RayCast), L pour jouer directement la scéne de fin
+ et 'ENTER' pour mettre en pause le jeu. "
 
 [node name="Cancel" type="Button" parent="Instructions"]
 layout_mode = 0
 offset_left = 132.0
 offset_top = 151.0
-offset_right = 231.0
+offset_right = 242.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30

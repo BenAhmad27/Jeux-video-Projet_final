@@ -58,8 +58,15 @@ func toggle_pause()->void:
 func toggle_collision()->void:
 	if Input.is_action_just_pressed("Collision shapes"):
 		get_tree().debug_collisions_hint = !get_tree().debug_collisions_hint
+		
+func final_scene()->void:
+	if Input.is_action_just_pressed("final_scene"):
+		SoundController.game_over_win()
+		goto_scene("res://Scenes/final_scene.tscn")
+	
 	
 			
 func _process(delta: float) -> void:
 	toggle_pause()
 	toggle_collision()
+	final_scene()
