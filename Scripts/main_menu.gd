@@ -8,6 +8,7 @@ extends Control
 
 
 func _ready() -> void:
+	$MainButtons/Start.grab_focus()
 	main_buttons.visible = true
 	options.visible = false	
 	instructions.visible = false

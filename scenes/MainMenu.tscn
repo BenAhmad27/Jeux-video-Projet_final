@@ -65,14 +65,14 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_bnhvo")
-text = "Star Game"
+text = "Start Game"
 
 [node name="Intructions" type="Button" parent="MainButtons"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_bnhvo")
-text = "Instrunction"
+text = "Instruction"
 
 [node name="Options" type="Button" parent="MainButtons"]
 layout_mode = 2

@@ -13,12 +13,13 @@
 size = Vector2(50, 79)
 
 [node name="Level2" type="Node2D"]
+position = Vector2(0, -4)
 
 [node name="Node2D" parent="." instance=ExtResource("1_ar73u")]
 position = Vector2(-1094, -344)
 
 [node name="Player" parent="." instance=ExtResource("2_wdtk5")]
-position = Vector2(-1006, 175)
+position = Vector2(-963, 188)
 
 [node name="kill_zone" parent="." instance=ExtResource("4_bvv5j")]
 position = Vector2(250, 299)
@@ -28,7 +29,7 @@ position = Vector2(3, -1)
 shape = SubResource("WorldBoundaryShape2D_w60u7")
 
 [node name="Ennemis" parent="." instance=ExtResource("5_n3cqh")]
-position = Vector2(-651, 58)
+position = Vector2(-651, 79)
 
 [node name="Ennemis2" parent="." instance=ExtResource("5_n3cqh")]
 position = Vector2(-153, 80)
@@ -37,10 +38,10 @@ position = Vector2(-153, 80)
 position = Vector2(372, -8)
 
 [node name="Ennemis4" parent="." instance=ExtResource("5_n3cqh")]
-position = Vector2(915, -217)
+position = Vector2(915, -209)
 
 [node name="Ennemis5" parent="." instance=ExtResource("5_n3cqh")]
-position = Vector2(-428, -86)
+position = Vector2(-430, -65)
 
 [node name="FinalPoint" type="Sprite2D" parent="."]
 position = Vector2(1316, 190)

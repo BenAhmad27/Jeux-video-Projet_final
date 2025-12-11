@@ -6,6 +6,7 @@ extends Control
 
 
 func _ready() -> void:
+	$VBoxContainer2/MainButtons/Restart.grab_focus()
 	Global.health = Global.max_health
 	if Global.win == true:
 		SoundController.game_over_win()
